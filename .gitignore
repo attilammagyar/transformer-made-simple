@@ -1,0 +1,7 @@
+data/ag-news/*
+data/cifar-10/*
+data/cifar-100/*
+data/imdb/*
+data/mnist/*
+data/multi30k/*
+data/wikitext2/*
