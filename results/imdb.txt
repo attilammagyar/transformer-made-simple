@@ -1,0 +1,2613 @@
+Starting experiment...
+  Random seed: 42
+len(train)=23284, len(val)=1222, len(test)=24531
+IMDb / Softmax (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.82184
+    Train  E:1/1      B:200      E|L|=0.69556
+    Train  E:1/1      B:300      E|L|=0.69679
+    Train  E:1/1      B:400      E|L|=0.69339
+    Train  E:1/1      B:500      E|L|=0.61028
+    Train  E:1/1      B:600      E|L|=0.47863
+    Train  E:1/1      B:700      E|L|=0.45097
+    Train  E:1/1      B:800      E|L|=0.46954
+    Train  E:1/1      B:900      E|L|=0.43503
+    Train  E:1/1      B:1000     E|L|=0.39563
+    Train  E:1/1      B:1100     E|L|=0.46711
+    Train  E:1/1      B:1200     E|L|=0.39967
+    Train  E:1/1      B:1300     E|L|=0.36187
+    Train  E:1/1      B:1400     E|L|=0.37614
+    Train  E:1/1      B:1500     E|L|=0.36323
+    Train  E:1/1      B:1600     E|L|=0.38589
+    Train  E:1/1      B:1700     E|L|=0.34294
+    Train  E:1/1      B:1800     E|L|=0.32331
+    Train  E:1/1      B:1900     E|L|=0.34616
+    Train  E:1/1      B:2000     E|L|=0.33914
+    Train  E:1/1      B:2100     E|L|=0.36334
+    Train  E:1/1      B:2200     E|L|=0.35549
+    Train  E:1/1      B:2300     E|L|=0.35511
+    Train  E:1/1      B:2400     E|L|=0.32968
+    Train  E:1/1      B:2500     E|L|=0.35624
+    Train  E:1/1      B:2600     E|L|=0.34577
+    Train  E:1/1      B:2700     E|L|=0.34451
+    Train  E:1/1      B:2800     E|L|=0.32760
+    Train  E:1/1      B:2900     E|L|=0.35251
+    Test   E:1/1      B:100  E|L|=0.31061
+  Epoch  E:1/1      Train/T=442.1s     Train/E|L|=0.43331  Test/T=6.8s       Test/E|L|=0.32355
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.85904  (len corr: -0.030)
+            F1: 0.85903
+    Train time: 442.1s
+
+IMDb / Softmax (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.83678
+    Train  E:1/1      B:200      E|L|=0.69251
+    Train  E:1/1      B:300      E|L|=0.68691
+    Train  E:1/1      B:400      E|L|=0.63506
+    Train  E:1/1      B:500      E|L|=0.57772
+    Train  E:1/1      B:600      E|L|=0.49199
+    Train  E:1/1      B:700      E|L|=0.41891
+    Train  E:1/1      B:800      E|L|=0.42881
+    Train  E:1/1      B:900      E|L|=0.47632
+    Train  E:1/1      B:1000     E|L|=0.42289
+    Train  E:1/1      B:1100     E|L|=0.40332
+    Train  E:1/1      B:1200     E|L|=0.38844
+    Train  E:1/1      B:1300     E|L|=0.37655
+    Train  E:1/1      B:1400     E|L|=0.34677
+    Train  E:1/1      B:1500     E|L|=0.38041
+    Train  E:1/1      B:1600     E|L|=0.38076
+    Train  E:1/1      B:1700     E|L|=0.38378
+    Train  E:1/1      B:1800     E|L|=0.32328
+    Train  E:1/1      B:1900     E|L|=0.33781
+    Train  E:1/1      B:2000     E|L|=0.34968
+    Train  E:1/1      B:2100     E|L|=0.31946
+    Train  E:1/1      B:2200     E|L|=0.34528
+    Train  E:1/1      B:2300     E|L|=0.32291
+    Train  E:1/1      B:2400     E|L|=0.32131
+    Train  E:1/1      B:2500     E|L|=0.38750
+    Train  E:1/1      B:2600     E|L|=0.36171
+    Train  E:1/1      B:2700     E|L|=0.32826
+    Train  E:1/1      B:2800     E|L|=0.36013
+    Train  E:1/1      B:2900     E|L|=0.31585
+    Test   E:1/1      B:100  E|L|=0.32978
+  Epoch  E:1/1      Train/T=451.5s     Train/E|L|=0.42694  Test/T=7.2s       Test/E|L|=0.32529
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.84946  (len corr: -0.022)
+            F1: 0.84945
+    Train time: 451.5s
+
+IMDb / Softmax (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.80318
+    Train  E:1/1      B:200      E|L|=0.69649
+    Train  E:1/1      B:300      E|L|=0.69481
+    Train  E:1/1      B:400      E|L|=0.69926
+    Train  E:1/1      B:500      E|L|=0.68043
+    Train  E:1/1      B:600      E|L|=0.54190
+    Train  E:1/1      B:700      E|L|=0.42451
+    Train  E:1/1      B:800      E|L|=0.41332
+    Train  E:1/1      B:900      E|L|=0.38010
+    Train  E:1/1      B:1000     E|L|=0.39521
+    Train  E:1/1      B:1100     E|L|=0.38635
+    Train  E:1/1      B:1200     E|L|=0.32394
+    Train  E:1/1      B:1300     E|L|=0.31556
+    Train  E:1/1      B:1400     E|L|=0.31294
+    Train  E:1/1      B:1500     E|L|=0.34070
+    Train  E:1/1      B:1600     E|L|=0.36056
+    Train  E:1/1      B:1700     E|L|=0.33044
+    Train  E:1/1      B:1800     E|L|=0.33748
+    Train  E:1/1      B:1900     E|L|=0.31177
+    Train  E:1/1      B:2000     E|L|=0.29392
+    Train  E:1/1      B:2100     E|L|=0.28829
+    Train  E:1/1      B:2200     E|L|=0.29766
+    Train  E:1/1      B:2300     E|L|=0.28933
+    Train  E:1/1      B:2400     E|L|=0.32920
+    Train  E:1/1      B:2500     E|L|=0.33707
+    Train  E:1/1      B:2600     E|L|=0.30823
+    Train  E:1/1      B:2700     E|L|=0.26110
+    Train  E:1/1      B:2800     E|L|=0.30780
+    Train  E:1/1      B:2900     E|L|=0.26801
+    Test   E:1/1      B:100  E|L|=0.21861
+  Epoch  E:1/1      Train/T=447.9s     Train/E|L|=0.40360  Test/T=6.7s       Test/E|L|=0.28454
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.86332  (len corr: 0.000)
+            F1: 0.86297
+    Train time: 447.9s
+
+IMDb / ReLU (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.73757
+    Train  E:1/1      B:200      E|L|=0.70512
+    Train  E:1/1      B:300      E|L|=0.69708
+    Train  E:1/1      B:400      E|L|=0.69934
+    Train  E:1/1      B:500      E|L|=0.64163
+    Train  E:1/1      B:600      E|L|=0.42413
+    Train  E:1/1      B:700      E|L|=0.39234
+    Train  E:1/1      B:800      E|L|=0.31001
+    Train  E:1/1      B:900      E|L|=0.36775
+    Train  E:1/1      B:1000     E|L|=0.29293
+    Train  E:1/1      B:1100     E|L|=0.37036
+    Train  E:1/1      B:1200     E|L|=0.28731
+    Train  E:1/1      B:1300     E|L|=0.27524
+    Train  E:1/1      B:1400     E|L|=0.30112
+    Train  E:1/1      B:1500     E|L|=0.28585
+    Train  E:1/1      B:1600     E|L|=0.28930
+    Train  E:1/1      B:1700     E|L|=0.27166
+    Train  E:1/1      B:1800     E|L|=0.24089
+    Train  E:1/1      B:1900     E|L|=0.27218
+    Train  E:1/1      B:2000     E|L|=0.24851
+    Train  E:1/1      B:2100     E|L|=0.25625
+    Train  E:1/1      B:2200     E|L|=0.24686
+    Train  E:1/1      B:2300     E|L|=0.27204
+    Train  E:1/1      B:2400     E|L|=0.27300
+    Train  E:1/1      B:2500     E|L|=0.25014
+    Train  E:1/1      B:2600     E|L|=0.24765
+    Train  E:1/1      B:2700     E|L|=0.28162
+    Train  E:1/1      B:2800     E|L|=0.26270
+    Train  E:1/1      B:2900     E|L|=0.29768
+    Test   E:1/1      B:100  E|L|=0.19339
+  Epoch  E:1/1      Train/T=416.3s     Train/E|L|=0.36150  Test/T=6.2s       Test/E|L|=0.24968
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.87844  (len corr: -0.029)
+            F1: 0.87822
+    Train time: 416.3s
+
+IMDb / ReLU (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.73482
+    Train  E:1/1      B:200      E|L|=0.71499
+    Train  E:1/1      B:300      E|L|=0.68460
+    Train  E:1/1      B:400      E|L|=0.51986
+    Train  E:1/1      B:500      E|L|=0.44949
+    Train  E:1/1      B:600      E|L|=0.40461
+    Train  E:1/1      B:700      E|L|=0.36317
+    Train  E:1/1      B:800      E|L|=0.34887
+    Train  E:1/1      B:900      E|L|=0.34495
+    Train  E:1/1      B:1000     E|L|=0.31776
+    Train  E:1/1      B:1100     E|L|=0.31220
+    Train  E:1/1      B:1200     E|L|=0.31093
+    Train  E:1/1      B:1300     E|L|=0.33037
+    Train  E:1/1      B:1400     E|L|=0.30091
+    Train  E:1/1      B:1500     E|L|=0.32953
+    Train  E:1/1      B:1600     E|L|=0.27803
+    Train  E:1/1      B:1700     E|L|=0.31140
+    Train  E:1/1      B:1800     E|L|=0.29253
+    Train  E:1/1      B:1900     E|L|=0.28456
+    Train  E:1/1      B:2000     E|L|=0.27186
+    Train  E:1/1      B:2100     E|L|=0.28874
+    Train  E:1/1      B:2200     E|L|=0.31752
+    Train  E:1/1      B:2300     E|L|=0.27929
+    Train  E:1/1      B:2400     E|L|=0.26508
+    Train  E:1/1      B:2500     E|L|=0.31063
+    Train  E:1/1      B:2600     E|L|=0.29079
+    Train  E:1/1      B:2700     E|L|=0.26390
+    Train  E:1/1      B:2800     E|L|=0.29248
+    Train  E:1/1      B:2900     E|L|=0.26849
+    Test   E:1/1      B:100  E|L|=0.20954
+  Epoch  E:1/1      Train/T=417.6s     Train/E|L|=0.36096  Test/T=6.1s       Test/E|L|=0.25120
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.87404  (len corr: -0.017)
+            F1: 0.87381
+    Train time: 417.6s
+
+IMDb / ReLU (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.74341
+    Train  E:1/1      B:200      E|L|=0.70700
+    Train  E:1/1      B:300      E|L|=0.69583
+    Train  E:1/1      B:400      E|L|=0.70503
+    Train  E:1/1      B:500      E|L|=0.70939
+    Train  E:1/1      B:600      E|L|=0.69922
+    Train  E:1/1      B:700      E|L|=0.69089
+    Train  E:1/1      B:800      E|L|=0.67407
+    Train  E:1/1      B:900      E|L|=0.46992
+    Train  E:1/1      B:1000     E|L|=0.43504
+    Train  E:1/1      B:1100     E|L|=0.33921
+    Train  E:1/1      B:1200     E|L|=0.27691
+    Train  E:1/1      B:1300     E|L|=0.30015
+    Train  E:1/1      B:1400     E|L|=0.27713
+    Train  E:1/1      B:1500     E|L|=0.29509
+    Train  E:1/1      B:1600     E|L|=0.29808
+    Train  E:1/1      B:1700     E|L|=0.28570
+    Train  E:1/1      B:1800     E|L|=0.28865
+    Train  E:1/1      B:1900     E|L|=0.28946
+    Train  E:1/1      B:2000     E|L|=0.27491
+    Train  E:1/1      B:2100     E|L|=0.24902
+    Train  E:1/1      B:2200     E|L|=0.27172
+    Train  E:1/1      B:2300     E|L|=0.25314
+    Train  E:1/1      B:2400     E|L|=0.27335
+    Train  E:1/1      B:2500     E|L|=0.27995
+    Train  E:1/1      B:2600     E|L|=0.28694
+    Train  E:1/1      B:2700     E|L|=0.22918
+    Train  E:1/1      B:2800     E|L|=0.27239
+    Train  E:1/1      B:2900     E|L|=0.25097
+    Test   E:1/1      B:100  E|L|=0.19015
+  Epoch  E:1/1      Train/T=418.3s     Train/E|L|=0.40682  Test/T=6.6s       Test/E|L|=0.23197
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.87677  (len corr: -0.008)
+            F1: 0.87644
+    Train time: 418.3s
+
+IMDb / ReLU/seql (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.73754
+    Train  E:1/1      B:200      E|L|=0.70630
+    Train  E:1/1      B:300      E|L|=0.70021
+    Train  E:1/1      B:400      E|L|=0.70418
+    Train  E:1/1      B:500      E|L|=0.69759
+    Train  E:1/1      B:600      E|L|=0.69347
+    Train  E:1/1      B:700      E|L|=0.66182
+    Train  E:1/1      B:800      E|L|=0.45517
+    Train  E:1/1      B:900      E|L|=0.48237
+    Train  E:1/1      B:1000     E|L|=0.31811
+    Train  E:1/1      B:1100     E|L|=0.37427
+    Train  E:1/1      B:1200     E|L|=0.31922
+    Train  E:1/1      B:1300     E|L|=0.29287
+    Train  E:1/1      B:1400     E|L|=0.29051
+    Train  E:1/1      B:1500     E|L|=0.30149
+    Train  E:1/1      B:1600     E|L|=0.29584
+    Train  E:1/1      B:1700     E|L|=0.27950
+    Train  E:1/1      B:1800     E|L|=0.23792
+    Train  E:1/1      B:1900     E|L|=0.28316
+    Train  E:1/1      B:2000     E|L|=0.23978
+    Train  E:1/1      B:2100     E|L|=0.26188
+    Train  E:1/1      B:2200     E|L|=0.25178
+    Train  E:1/1      B:2300     E|L|=0.27841
+    Train  E:1/1      B:2400     E|L|=0.28253
+    Train  E:1/1      B:2500     E|L|=0.25117
+    Train  E:1/1      B:2600     E|L|=0.24320
+    Train  E:1/1      B:2700     E|L|=0.26984
+    Train  E:1/1      B:2800     E|L|=0.26618
+    Train  E:1/1      B:2900     E|L|=0.29555
+    Test   E:1/1      B:100  E|L|=0.20690
+  Epoch  E:1/1      Train/T=417.0s     Train/E|L|=0.39495  Test/T=6.9s       Test/E|L|=0.24365
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88174  (len corr: -0.022)
+            F1: 0.88161
+    Train time: 417.0s
+
+IMDb / ReLU/seql (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.74029
+    Train  E:1/1      B:200      E|L|=0.71262
+    Train  E:1/1      B:300      E|L|=0.64079
+    Train  E:1/1      B:400      E|L|=0.42525
+    Train  E:1/1      B:500      E|L|=0.37560
+    Train  E:1/1      B:600      E|L|=0.36460
+    Train  E:1/1      B:700      E|L|=0.28426
+    Train  E:1/1      B:800      E|L|=0.30034
+    Train  E:1/1      B:900      E|L|=0.33423
+    Train  E:1/1      B:1000     E|L|=0.28629
+    Train  E:1/1      B:1100     E|L|=0.29618
+    Train  E:1/1      B:1200     E|L|=0.28680
+    Train  E:1/1      B:1300     E|L|=0.30443
+    Train  E:1/1      B:1400     E|L|=0.26642
+    Train  E:1/1      B:1500     E|L|=0.29575
+    Train  E:1/1      B:1600     E|L|=0.27714
+    Train  E:1/1      B:1700     E|L|=0.30707
+    Train  E:1/1      B:1800     E|L|=0.22414
+    Train  E:1/1      B:1900     E|L|=0.26492
+    Train  E:1/1      B:2000     E|L|=0.24920
+    Train  E:1/1      B:2100     E|L|=0.25538
+    Train  E:1/1      B:2200     E|L|=0.28442
+    Train  E:1/1      B:2300     E|L|=0.26137
+    Train  E:1/1      B:2400     E|L|=0.23534
+    Train  E:1/1      B:2500     E|L|=0.30184
+    Train  E:1/1      B:2600     E|L|=0.27061
+    Train  E:1/1      B:2700     E|L|=0.25030
+    Train  E:1/1      B:2800     E|L|=0.27702
+    Train  E:1/1      B:2900     E|L|=0.25265
+    Test   E:1/1      B:100  E|L|=0.21514
+  Epoch  E:1/1      Train/T=414.0s     Train/E|L|=0.33162  Test/T=6.2s       Test/E|L|=0.23504
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88374  (len corr: -0.022)
+            F1: 0.88371
+    Train time: 414.0s
+
+IMDb / ReLU/seql (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.75029
+    Train  E:1/1      B:200      E|L|=0.70460
+    Train  E:1/1      B:300      E|L|=0.69585
+    Train  E:1/1      B:400      E|L|=0.70423
+    Train  E:1/1      B:500      E|L|=0.70844
+    Train  E:1/1      B:600      E|L|=0.69453
+    Train  E:1/1      B:700      E|L|=0.64296
+    Train  E:1/1      B:800      E|L|=0.51071
+    Train  E:1/1      B:900      E|L|=0.34265
+    Train  E:1/1      B:1000     E|L|=0.34243
+    Train  E:1/1      B:1100     E|L|=0.33712
+    Train  E:1/1      B:1200     E|L|=0.26509
+    Train  E:1/1      B:1300     E|L|=0.27815
+    Train  E:1/1      B:1400     E|L|=0.27520
+    Train  E:1/1      B:1500     E|L|=0.29426
+    Train  E:1/1      B:1600     E|L|=0.28534
+    Train  E:1/1      B:1700     E|L|=0.27796
+    Train  E:1/1      B:1800     E|L|=0.30223
+    Train  E:1/1      B:1900     E|L|=0.26429
+    Train  E:1/1      B:2000     E|L|=0.26135
+    Train  E:1/1      B:2100     E|L|=0.25403
+    Train  E:1/1      B:2200     E|L|=0.27180
+    Train  E:1/1      B:2300     E|L|=0.26265
+    Train  E:1/1      B:2400     E|L|=0.27655
+    Train  E:1/1      B:2500     E|L|=0.27986
+    Train  E:1/1      B:2600     E|L|=0.28815
+    Train  E:1/1      B:2700     E|L|=0.23890
+    Train  E:1/1      B:2800     E|L|=0.27271
+    Train  E:1/1      B:2900     E|L|=0.24903
+    Test   E:1/1      B:100  E|L|=0.21263
+  Epoch  E:1/1      Train/T=414.5s     Train/E|L|=0.38994  Test/T=6.9s       Test/E|L|=0.23705
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88378  (len corr: -0.013)
+            F1: 0.88370
+    Train time: 414.5s
+
+IMDb / SReLU (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.75271
+    Train  E:1/1      B:200      E|L|=0.70149
+    Train  E:1/1      B:300      E|L|=0.69493
+    Train  E:1/1      B:400      E|L|=0.67093
+    Train  E:1/1      B:500      E|L|=0.51173
+    Train  E:1/1      B:600      E|L|=0.36145
+    Train  E:1/1      B:700      E|L|=0.34864
+    Train  E:1/1      B:800      E|L|=0.32051
+    Train  E:1/1      B:900      E|L|=0.34899
+    Train  E:1/1      B:1000     E|L|=0.27992
+    Train  E:1/1      B:1100     E|L|=0.35001
+    Train  E:1/1      B:1200     E|L|=0.28489
+    Train  E:1/1      B:1300     E|L|=0.27750
+    Train  E:1/1      B:1400     E|L|=0.28691
+    Train  E:1/1      B:1500     E|L|=0.27679
+    Train  E:1/1      B:1600     E|L|=0.29276
+    Train  E:1/1      B:1700     E|L|=0.25391
+    Train  E:1/1      B:1800     E|L|=0.24255
+    Train  E:1/1      B:1900     E|L|=0.27334
+    Train  E:1/1      B:2000     E|L|=0.25008
+    Train  E:1/1      B:2100     E|L|=0.24787
+    Train  E:1/1      B:2200     E|L|=0.25582
+    Train  E:1/1      B:2300     E|L|=0.27716
+    Train  E:1/1      B:2400     E|L|=0.28434
+    Train  E:1/1      B:2500     E|L|=0.25023
+    Train  E:1/1      B:2600     E|L|=0.25312
+    Train  E:1/1      B:2700     E|L|=0.28333
+    Train  E:1/1      B:2800     E|L|=0.26168
+    Train  E:1/1      B:2900     E|L|=0.30546
+    Test   E:1/1      B:100  E|L|=0.22626
+  Epoch  E:1/1      Train/T=235.5s     Train/E|L|=0.35131  Test/T=2.9s       Test/E|L|=0.23948
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88488  (len corr: -0.018)
+            F1: 0.88488
+    Train time: 235.5s
+
+IMDb / SReLU (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.72428
+    Train  E:1/1      B:200      E|L|=0.64398
+    Train  E:1/1      B:300      E|L|=0.43410
+    Train  E:1/1      B:400      E|L|=0.33850
+    Train  E:1/1      B:500      E|L|=0.35531
+    Train  E:1/1      B:600      E|L|=0.36508
+    Train  E:1/1      B:700      E|L|=0.29305
+    Train  E:1/1      B:800      E|L|=0.29755
+    Train  E:1/1      B:900      E|L|=0.31475
+    Train  E:1/1      B:1000     E|L|=0.28128
+    Train  E:1/1      B:1100     E|L|=0.29241
+    Train  E:1/1      B:1200     E|L|=0.27885
+    Train  E:1/1      B:1300     E|L|=0.28717
+    Train  E:1/1      B:1400     E|L|=0.25677
+    Train  E:1/1      B:1500     E|L|=0.27273
+    Train  E:1/1      B:1600     E|L|=0.27152
+    Train  E:1/1      B:1700     E|L|=0.30145
+    Train  E:1/1      B:1800     E|L|=0.23265
+    Train  E:1/1      B:1900     E|L|=0.25937
+    Train  E:1/1      B:2000     E|L|=0.24430
+    Train  E:1/1      B:2100     E|L|=0.25465
+    Train  E:1/1      B:2200     E|L|=0.29532
+    Train  E:1/1      B:2300     E|L|=0.26567
+    Train  E:1/1      B:2400     E|L|=0.24427
+    Train  E:1/1      B:2500     E|L|=0.30911
+    Train  E:1/1      B:2600     E|L|=0.28416
+    Train  E:1/1      B:2700     E|L|=0.25445
+    Train  E:1/1      B:2800     E|L|=0.27305
+    Train  E:1/1      B:2900     E|L|=0.25586
+    Test   E:1/1      B:100  E|L|=0.21261
+  Epoch  E:1/1      Train/T=237.0s     Train/E|L|=0.31631  Test/T=3.0s       Test/E|L|=0.23289
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88496  (len corr: -0.016)
+            F1: 0.88494
+    Train time: 237.0s
+
+IMDb / SReLU (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.73276
+    Train  E:1/1      B:200      E|L|=0.68579
+    Train  E:1/1      B:300      E|L|=0.60947
+    Train  E:1/1      B:400      E|L|=0.47657
+    Train  E:1/1      B:500      E|L|=0.44362
+    Train  E:1/1      B:600      E|L|=0.35780
+    Train  E:1/1      B:700      E|L|=0.33054
+    Train  E:1/1      B:800      E|L|=0.30746
+    Train  E:1/1      B:900      E|L|=0.27213
+    Train  E:1/1      B:1000     E|L|=0.32814
+    Train  E:1/1      B:1100     E|L|=0.29893
+    Train  E:1/1      B:1200     E|L|=0.24620
+    Train  E:1/1      B:1300     E|L|=0.25368
+    Train  E:1/1      B:1400     E|L|=0.27407
+    Train  E:1/1      B:1500     E|L|=0.28462
+    Train  E:1/1      B:1600     E|L|=0.26815
+    Train  E:1/1      B:1700     E|L|=0.29142
+    Train  E:1/1      B:1800     E|L|=0.28088
+    Train  E:1/1      B:1900     E|L|=0.28106
+    Train  E:1/1      B:2000     E|L|=0.26567
+    Train  E:1/1      B:2100     E|L|=0.26630
+    Train  E:1/1      B:2200     E|L|=0.27561
+    Train  E:1/1      B:2300     E|L|=0.25935
+    Train  E:1/1      B:2400     E|L|=0.25615
+    Train  E:1/1      B:2500     E|L|=0.27264
+    Train  E:1/1      B:2600     E|L|=0.27521
+    Train  E:1/1      B:2700     E|L|=0.22230
+    Train  E:1/1      B:2800     E|L|=0.27510
+    Train  E:1/1      B:2900     E|L|=0.25742
+    Test   E:1/1      B:100  E|L|=0.19149
+  Epoch  E:1/1      Train/T=233.1s     Train/E|L|=0.33217  Test/T=2.9s       Test/E|L|=0.24638
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87889  (len corr: -0.018)
+            F1: 0.87857
+    Train time: 233.1s
+
+IMDb / SReLU/noscl (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.75369
+    Train  E:1/1      B:200      E|L|=0.70269
+    Train  E:1/1      B:300      E|L|=0.68176
+    Train  E:1/1      B:400      E|L|=0.59648
+    Train  E:1/1      B:500      E|L|=0.41378
+    Train  E:1/1      B:600      E|L|=0.36644
+    Train  E:1/1      B:700      E|L|=0.31956
+    Train  E:1/1      B:800      E|L|=0.29959
+    Train  E:1/1      B:900      E|L|=0.34436
+    Train  E:1/1      B:1000     E|L|=0.26835
+    Train  E:1/1      B:1100     E|L|=0.35036
+    Train  E:1/1      B:1200     E|L|=0.29004
+    Train  E:1/1      B:1300     E|L|=0.29279
+    Train  E:1/1      B:1400     E|L|=0.30721
+    Train  E:1/1      B:1500     E|L|=0.29405
+    Train  E:1/1      B:1600     E|L|=0.28681
+    Train  E:1/1      B:1700     E|L|=0.25882
+    Train  E:1/1      B:1800     E|L|=0.23999
+    Train  E:1/1      B:1900     E|L|=0.27884
+    Train  E:1/1      B:2000     E|L|=0.24633
+    Train  E:1/1      B:2100     E|L|=0.25346
+    Train  E:1/1      B:2200     E|L|=0.25364
+    Train  E:1/1      B:2300     E|L|=0.27983
+    Train  E:1/1      B:2400     E|L|=0.28817
+    Train  E:1/1      B:2500     E|L|=0.25480
+    Train  E:1/1      B:2600     E|L|=0.27791
+    Train  E:1/1      B:2700     E|L|=0.27501
+    Train  E:1/1      B:2800     E|L|=0.26400
+    Train  E:1/1      B:2900     E|L|=0.30545
+    Test   E:1/1      B:100  E|L|=0.23261
+  Epoch  E:1/1      Train/T=234.3s     Train/E|L|=0.34603  Test/T=2.9s       Test/E|L|=0.24272
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88435  (len corr: -0.010)
+            F1: 0.88435
+    Train time: 234.3s
+
+IMDb / SReLU/noscl (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.72325
+    Train  E:1/1      B:200      E|L|=0.61351
+    Train  E:1/1      B:300      E|L|=0.39345
+    Train  E:1/1      B:400      E|L|=0.32866
+    Train  E:1/1      B:500      E|L|=0.35371
+    Train  E:1/1      B:600      E|L|=0.38353
+    Train  E:1/1      B:700      E|L|=0.27935
+    Train  E:1/1      B:800      E|L|=0.29284
+    Train  E:1/1      B:900      E|L|=0.32414
+    Train  E:1/1      B:1000     E|L|=0.28594
+    Train  E:1/1      B:1100     E|L|=0.28538
+    Train  E:1/1      B:1200     E|L|=0.28489
+    Train  E:1/1      B:1300     E|L|=0.27222
+    Train  E:1/1      B:1400     E|L|=0.24789
+    Train  E:1/1      B:1500     E|L|=0.28969
+    Train  E:1/1      B:1600     E|L|=0.27324
+    Train  E:1/1      B:1700     E|L|=0.30272
+    Train  E:1/1      B:1800     E|L|=0.22053
+    Train  E:1/1      B:1900     E|L|=0.26103
+    Train  E:1/1      B:2000     E|L|=0.24550
+    Train  E:1/1      B:2100     E|L|=0.26103
+    Train  E:1/1      B:2200     E|L|=0.29445
+    Train  E:1/1      B:2300     E|L|=0.26580
+    Train  E:1/1      B:2400     E|L|=0.24702
+    Train  E:1/1      B:2500     E|L|=0.30668
+    Train  E:1/1      B:2600     E|L|=0.28251
+    Train  E:1/1      B:2700     E|L|=0.25194
+    Train  E:1/1      B:2800     E|L|=0.27739
+    Train  E:1/1      B:2900     E|L|=0.24677
+    Test   E:1/1      B:100  E|L|=0.21912
+  Epoch  E:1/1      Train/T=236.4s     Train/E|L|=0.31335  Test/T=3.0s       Test/E|L|=0.23195
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88671  (len corr: -0.024)
+            F1: 0.88671
+    Train time: 236.4s
+
+IMDb / SReLU/noscl (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.74193
+    Train  E:1/1      B:200      E|L|=0.64648
+    Train  E:1/1      B:300      E|L|=0.45504
+    Train  E:1/1      B:400      E|L|=0.41223
+    Train  E:1/1      B:500      E|L|=0.37474
+    Train  E:1/1      B:600      E|L|=0.36729
+    Train  E:1/1      B:700      E|L|=0.32522
+    Train  E:1/1      B:800      E|L|=0.30390
+    Train  E:1/1      B:900      E|L|=0.28124
+    Train  E:1/1      B:1000     E|L|=0.33140
+    Train  E:1/1      B:1100     E|L|=0.29961
+    Train  E:1/1      B:1200     E|L|=0.24528
+    Train  E:1/1      B:1300     E|L|=0.27286
+    Train  E:1/1      B:1400     E|L|=0.26340
+    Train  E:1/1      B:1500     E|L|=0.27970
+    Train  E:1/1      B:1600     E|L|=0.27083
+    Train  E:1/1      B:1700     E|L|=0.28527
+    Train  E:1/1      B:1800     E|L|=0.27778
+    Train  E:1/1      B:1900     E|L|=0.26931
+    Train  E:1/1      B:2000     E|L|=0.25385
+    Train  E:1/1      B:2100     E|L|=0.25105
+    Train  E:1/1      B:2200     E|L|=0.27964
+    Train  E:1/1      B:2300     E|L|=0.25244
+    Train  E:1/1      B:2400     E|L|=0.26337
+    Train  E:1/1      B:2500     E|L|=0.27651
+    Train  E:1/1      B:2600     E|L|=0.28765
+    Train  E:1/1      B:2700     E|L|=0.22205
+    Train  E:1/1      B:2800     E|L|=0.26688
+    Train  E:1/1      B:2900     E|L|=0.24709
+    Test   E:1/1      B:100  E|L|=0.19599
+  Epoch  E:1/1      Train/T=236.3s     Train/E|L|=0.32033  Test/T=2.9s       Test/E|L|=0.24810
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88093  (len corr: -0.013)
+            F1: 0.88068
+    Train time: 236.3s
+
+IMDb / SReLU/seql (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.72685
+    Train  E:1/1      B:200      E|L|=0.65624
+    Train  E:1/1      B:300      E|L|=0.48190
+    Train  E:1/1      B:400      E|L|=0.35376
+    Train  E:1/1      B:500      E|L|=0.37384
+    Train  E:1/1      B:600      E|L|=0.35579
+    Train  E:1/1      B:700      E|L|=0.30781
+    Train  E:1/1      B:800      E|L|=0.29671
+    Train  E:1/1      B:900      E|L|=0.33740
+    Train  E:1/1      B:1000     E|L|=0.25212
+    Train  E:1/1      B:1100     E|L|=0.35202
+    Train  E:1/1      B:1200     E|L|=0.28219
+    Train  E:1/1      B:1300     E|L|=0.29092
+    Train  E:1/1      B:1400     E|L|=0.28236
+    Train  E:1/1      B:1500     E|L|=0.29026
+    Train  E:1/1      B:1600     E|L|=0.28397
+    Train  E:1/1      B:1700     E|L|=0.25067
+    Train  E:1/1      B:1800     E|L|=0.23439
+    Train  E:1/1      B:1900     E|L|=0.27275
+    Train  E:1/1      B:2000     E|L|=0.24456
+    Train  E:1/1      B:2100     E|L|=0.25402
+    Train  E:1/1      B:2200     E|L|=0.24629
+    Train  E:1/1      B:2300     E|L|=0.26987
+    Train  E:1/1      B:2400     E|L|=0.27773
+    Train  E:1/1      B:2500     E|L|=0.25284
+    Train  E:1/1      B:2600     E|L|=0.24735
+    Train  E:1/1      B:2700     E|L|=0.28587
+    Train  E:1/1      B:2800     E|L|=0.26019
+    Train  E:1/1      B:2900     E|L|=0.29908
+    Test   E:1/1      B:100  E|L|=0.21817
+  Epoch  E:1/1      Train/T=236.8s     Train/E|L|=0.32110  Test/T=3.0s       Test/E|L|=0.23835
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88610  (len corr: -0.029)
+            F1: 0.88608
+    Train time: 236.8s
+
+IMDb / SReLU/seql (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.73896
+    Train  E:1/1      B:200      E|L|=0.67263
+    Train  E:1/1      B:300      E|L|=0.45562
+    Train  E:1/1      B:400      E|L|=0.32214
+    Train  E:1/1      B:500      E|L|=0.35996
+    Train  E:1/1      B:600      E|L|=0.37796
+    Train  E:1/1      B:700      E|L|=0.31436
+    Train  E:1/1      B:800      E|L|=0.30617
+    Train  E:1/1      B:900      E|L|=0.34045
+    Train  E:1/1      B:1000     E|L|=0.29107
+    Train  E:1/1      B:1100     E|L|=0.30847
+    Train  E:1/1      B:1200     E|L|=0.29422
+    Train  E:1/1      B:1300     E|L|=0.30001
+    Train  E:1/1      B:1400     E|L|=0.25874
+    Train  E:1/1      B:1500     E|L|=0.29646
+    Train  E:1/1      B:1600     E|L|=0.27128
+    Train  E:1/1      B:1700     E|L|=0.29314
+    Train  E:1/1      B:1800     E|L|=0.23101
+    Train  E:1/1      B:1900     E|L|=0.26237
+    Train  E:1/1      B:2000     E|L|=0.25215
+    Train  E:1/1      B:2100     E|L|=0.27616
+    Train  E:1/1      B:2200     E|L|=0.31200
+    Train  E:1/1      B:2300     E|L|=0.27011
+    Train  E:1/1      B:2400     E|L|=0.25048
+    Train  E:1/1      B:2500     E|L|=0.31420
+    Train  E:1/1      B:2600     E|L|=0.29471
+    Train  E:1/1      B:2700     E|L|=0.25548
+    Train  E:1/1      B:2800     E|L|=0.27673
+    Train  E:1/1      B:2900     E|L|=0.25574
+    Test   E:1/1      B:100  E|L|=0.20599
+  Epoch  E:1/1      Train/T=239.6s     Train/E|L|=0.32558  Test/T=3.0s       Test/E|L|=0.23454
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88264  (len corr: -0.024)
+            F1: 0.88262
+    Train time: 239.6s
+
+IMDb / SReLU/seql (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.74401
+    Train  E:1/1      B:200      E|L|=0.68735
+    Train  E:1/1      B:300      E|L|=0.59136
+    Train  E:1/1      B:400      E|L|=0.45808
+    Train  E:1/1      B:500      E|L|=0.39619
+    Train  E:1/1      B:600      E|L|=0.34734
+    Train  E:1/1      B:700      E|L|=0.31926
+    Train  E:1/1      B:800      E|L|=0.30613
+    Train  E:1/1      B:900      E|L|=0.27073
+    Train  E:1/1      B:1000     E|L|=0.32355
+    Train  E:1/1      B:1100     E|L|=0.28832
+    Train  E:1/1      B:1200     E|L|=0.24753
+    Train  E:1/1      B:1300     E|L|=0.26449
+    Train  E:1/1      B:1400     E|L|=0.27026
+    Train  E:1/1      B:1500     E|L|=0.28596
+    Train  E:1/1      B:1600     E|L|=0.27314
+    Train  E:1/1      B:1700     E|L|=0.28502
+    Train  E:1/1      B:1800     E|L|=0.27894
+    Train  E:1/1      B:1900     E|L|=0.27704
+    Train  E:1/1      B:2000     E|L|=0.25383
+    Train  E:1/1      B:2100     E|L|=0.25722
+    Train  E:1/1      B:2200     E|L|=0.28286
+    Train  E:1/1      B:2300     E|L|=0.25520
+    Train  E:1/1      B:2400     E|L|=0.26168
+    Train  E:1/1      B:2500     E|L|=0.27402
+    Train  E:1/1      B:2600     E|L|=0.27299
+    Train  E:1/1      B:2700     E|L|=0.21811
+    Train  E:1/1      B:2800     E|L|=0.27362
+    Train  E:1/1      B:2900     E|L|=0.25392
+    Test   E:1/1      B:100  E|L|=0.19373
+  Epoch  E:1/1      Train/T=235.7s     Train/E|L|=0.32773  Test/T=2.9s       Test/E|L|=0.25980
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87603  (len corr: -0.023)
+            F1: 0.87563
+    Train time: 235.7s
+
+IMDb / UbPerc (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.70016
+    Train  E:1/1      B:200      E|L|=0.69134
+    Train  E:1/1      B:300      E|L|=0.69034
+    Train  E:1/1      B:400      E|L|=0.68599
+    Train  E:1/1      B:500      E|L|=0.67814
+    Train  E:1/1      B:600      E|L|=0.66032
+    Train  E:1/1      B:700      E|L|=0.64486
+    Train  E:1/1      B:800      E|L|=0.61389
+    Train  E:1/1      B:900      E|L|=0.61995
+    Train  E:1/1      B:1000     E|L|=0.60854
+    Train  E:1/1      B:1100     E|L|=0.63428
+    Train  E:1/1      B:1200     E|L|=0.63514
+    Train  E:1/1      B:1300     E|L|=0.61739
+    Train  E:1/1      B:1400     E|L|=0.62183
+    Train  E:1/1      B:1500     E|L|=0.62295
+    Train  E:1/1      B:1600     E|L|=0.61065
+    Train  E:1/1      B:1700     E|L|=0.58911
+    Train  E:1/1      B:1800     E|L|=0.60689
+    Train  E:1/1      B:1900     E|L|=0.61036
+    Train  E:1/1      B:2000     E|L|=0.59761
+    Train  E:1/1      B:2100     E|L|=0.60282
+    Train  E:1/1      B:2200     E|L|=0.60229
+    Train  E:1/1      B:2300     E|L|=0.58624
+    Train  E:1/1      B:2400     E|L|=0.58489
+    Train  E:1/1      B:2500     E|L|=0.60534
+    Train  E:1/1      B:2600     E|L|=0.61649
+    Train  E:1/1      B:2700     E|L|=0.58709
+    Train  E:1/1      B:2800     E|L|=0.61337
+    Train  E:1/1      B:2900     E|L|=0.59934
+    Test   E:1/1      B:100  E|L|=0.58757
+  Epoch  E:1/1      Train/T=178.7s     Train/E|L|=0.62533  Test/T=2.2s       Test/E|L|=0.60389
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.65395  (len corr: 0.041)
+            F1: 0.65352
+    Train time: 178.7s
+
+IMDb / UbPerc (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.70088
+    Train  E:1/1      B:200      E|L|=0.69377
+    Train  E:1/1      B:300      E|L|=0.69217
+    Train  E:1/1      B:400      E|L|=0.69447
+    Train  E:1/1      B:500      E|L|=0.69495
+    Train  E:1/1      B:600      E|L|=0.69573
+    Train  E:1/1      B:700      E|L|=0.69310
+    Train  E:1/1      B:800      E|L|=0.69484
+    Train  E:1/1      B:900      E|L|=0.69174
+    Train  E:1/1      B:1000     E|L|=0.69546
+    Train  E:1/1      B:1100     E|L|=0.69273
+    Train  E:1/1      B:1200     E|L|=0.69314
+    Train  E:1/1      B:1300     E|L|=0.69377
+    Train  E:1/1      B:1400     E|L|=0.68798
+    Train  E:1/1      B:1500     E|L|=0.69791
+    Train  E:1/1      B:1600     E|L|=0.69091
+    Train  E:1/1      B:1700     E|L|=0.69157
+    Train  E:1/1      B:1800     E|L|=0.68816
+    Train  E:1/1      B:1900     E|L|=0.68598
+    Train  E:1/1      B:2000     E|L|=0.68912
+    Train  E:1/1      B:2100     E|L|=0.68327
+    Train  E:1/1      B:2200     E|L|=0.68082
+    Train  E:1/1      B:2300     E|L|=0.67147
+    Train  E:1/1      B:2400     E|L|=0.66554
+    Train  E:1/1      B:2500     E|L|=0.66756
+    Train  E:1/1      B:2600     E|L|=0.62752
+    Train  E:1/1      B:2700     E|L|=0.54776
+    Train  E:1/1      B:2800     E|L|=0.58136
+    Train  E:1/1      B:2900     E|L|=0.50066
+    Test   E:1/1      B:100  E|L|=0.39137
+  Epoch  E:1/1      Train/T=180.6s     Train/E|L|=0.67117  Test/T=2.2s       Test/E|L|=0.48614
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.73597  (len corr: 0.004)
+            F1: 0.72647
+    Train time: 180.6s
+
+IMDb / UbPerc (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.70325
+    Train  E:1/1      B:200      E|L|=0.69723
+    Train  E:1/1      B:300      E|L|=0.69438
+    Train  E:1/1      B:400      E|L|=0.69142
+    Train  E:1/1      B:500      E|L|=0.69273
+    Train  E:1/1      B:600      E|L|=0.68788
+    Train  E:1/1      B:700      E|L|=0.69264
+    Train  E:1/1      B:800      E|L|=0.69149
+    Train  E:1/1      B:900      E|L|=0.69117
+    Train  E:1/1      B:1000     E|L|=0.69240
+    Train  E:1/1      B:1100     E|L|=0.69171
+    Train  E:1/1      B:1200     E|L|=0.68563
+    Train  E:1/1      B:1300     E|L|=0.69833
+    Train  E:1/1      B:1400     E|L|=0.69117
+    Train  E:1/1      B:1500     E|L|=0.69176
+    Train  E:1/1      B:1600     E|L|=0.69377
+    Train  E:1/1      B:1700     E|L|=0.69223
+    Train  E:1/1      B:1800     E|L|=0.69408
+    Train  E:1/1      B:1900     E|L|=0.69782
+    Train  E:1/1      B:2000     E|L|=0.69328
+    Train  E:1/1      B:2100     E|L|=0.69226
+    Train  E:1/1      B:2200     E|L|=0.69408
+    Train  E:1/1      B:2300     E|L|=0.69219
+    Train  E:1/1      B:2400     E|L|=0.69359
+    Train  E:1/1      B:2500     E|L|=0.69303
+    Train  E:1/1      B:2600     E|L|=0.69314
+    Train  E:1/1      B:2700     E|L|=0.69187
+    Train  E:1/1      B:2800     E|L|=0.69285
+    Train  E:1/1      B:2900     E|L|=0.69151
+    Test   E:1/1      B:100  E|L|=0.69488
+  Epoch  E:1/1      Train/T=178.6s     Train/E|L|=0.69306  Test/T=2.1s       Test/E|L|=0.69246
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.52044  (len corr: -0.029)
+            F1: 0.51959
+    Train time: 178.6s
+
+IMDb / UbPerc/seql (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.70436
+    Train  E:1/1      B:200      E|L|=0.69200
+    Train  E:1/1      B:300      E|L|=0.69340
+    Train  E:1/1      B:400      E|L|=0.69277
+    Train  E:1/1      B:500      E|L|=0.68697
+    Train  E:1/1      B:600      E|L|=0.68268
+    Train  E:1/1      B:700      E|L|=0.68805
+    Train  E:1/1      B:800      E|L|=0.67675
+    Train  E:1/1      B:900      E|L|=0.67708
+    Train  E:1/1      B:1000     E|L|=0.66089
+    Train  E:1/1      B:1100     E|L|=0.68466
+    Train  E:1/1      B:1200     E|L|=0.66903
+    Train  E:1/1      B:1300     E|L|=0.67071
+    Train  E:1/1      B:1400     E|L|=0.67749
+    Train  E:1/1      B:1500     E|L|=0.66662
+    Train  E:1/1      B:1600     E|L|=0.67591
+    Train  E:1/1      B:1700     E|L|=0.65408
+    Train  E:1/1      B:1800     E|L|=0.67381
+    Train  E:1/1      B:1900     E|L|=0.68138
+    Train  E:1/1      B:2000     E|L|=0.69185
+    Train  E:1/1      B:2100     E|L|=0.67157
+    Train  E:1/1      B:2200     E|L|=0.67608
+    Train  E:1/1      B:2300     E|L|=0.67319
+    Train  E:1/1      B:2400     E|L|=0.66380
+    Train  E:1/1      B:2500     E|L|=0.67153
+    Train  E:1/1      B:2600     E|L|=0.67528
+    Train  E:1/1      B:2700     E|L|=0.65541
+    Train  E:1/1      B:2800     E|L|=0.66821
+    Train  E:1/1      B:2900     E|L|=0.66288
+    Test   E:1/1      B:100  E|L|=0.67121
+  Epoch  E:1/1      Train/T=181.2s     Train/E|L|=0.67647  Test/T=2.2s       Test/E|L|=0.66651
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.58575  (len corr: 0.009)
+            F1: 0.58567
+    Train time: 181.2s
+
+IMDb / UbPerc/seql (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.70359
+    Train  E:1/1      B:200      E|L|=0.68932
+    Train  E:1/1      B:300      E|L|=0.69153
+    Train  E:1/1      B:400      E|L|=0.69312
+    Train  E:1/1      B:500      E|L|=0.68278
+    Train  E:1/1      B:600      E|L|=0.68023
+    Train  E:1/1      B:700      E|L|=0.68896
+    Train  E:1/1      B:800      E|L|=0.67218
+    Train  E:1/1      B:900      E|L|=0.67143
+    Train  E:1/1      B:1000     E|L|=0.66875
+    Train  E:1/1      B:1100     E|L|=0.65464
+    Train  E:1/1      B:1200     E|L|=0.65203
+    Train  E:1/1      B:1300     E|L|=0.68091
+    Train  E:1/1      B:1400     E|L|=0.67550
+    Train  E:1/1      B:1500     E|L|=0.64895
+    Train  E:1/1      B:1600     E|L|=0.66874
+    Train  E:1/1      B:1700     E|L|=0.65354
+    Train  E:1/1      B:1800     E|L|=0.63485
+    Train  E:1/1      B:1900     E|L|=0.66082
+    Train  E:1/1      B:2000     E|L|=0.64025
+    Train  E:1/1      B:2100     E|L|=0.61477
+    Train  E:1/1      B:2200     E|L|=0.65236
+    Train  E:1/1      B:2300     E|L|=0.63050
+    Train  E:1/1      B:2400     E|L|=0.64563
+    Train  E:1/1      B:2500     E|L|=0.66084
+    Train  E:1/1      B:2600     E|L|=0.64072
+    Train  E:1/1      B:2700     E|L|=0.63164
+    Train  E:1/1      B:2800     E|L|=0.63191
+    Train  E:1/1      B:2900     E|L|=0.64084
+    Test   E:1/1      B:100  E|L|=0.61129
+  Epoch  E:1/1      Train/T=182.1s     Train/E|L|=0.66054  Test/T=2.2s       Test/E|L|=0.62911
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.62354  (len corr: 0.075)
+            F1: 0.62078
+    Train time: 182.1s
+
+IMDb / UbPerc/seql (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.69624
+    Train  E:1/1      B:200      E|L|=0.69379
+    Train  E:1/1      B:300      E|L|=0.69420
+    Train  E:1/1      B:400      E|L|=0.69259
+    Train  E:1/1      B:500      E|L|=0.68714
+    Train  E:1/1      B:600      E|L|=0.67496
+    Train  E:1/1      B:700      E|L|=0.67427
+    Train  E:1/1      B:800      E|L|=0.67798
+    Train  E:1/1      B:900      E|L|=0.66616
+    Train  E:1/1      B:1000     E|L|=0.68227
+    Train  E:1/1      B:1100     E|L|=0.66614
+    Train  E:1/1      B:1200     E|L|=0.65695
+    Train  E:1/1      B:1300     E|L|=0.67096
+    Train  E:1/1      B:1400     E|L|=0.66959
+    Train  E:1/1      B:1500     E|L|=0.65473
+    Train  E:1/1      B:1600     E|L|=0.64946
+    Train  E:1/1      B:1700     E|L|=0.65917
+    Train  E:1/1      B:1800     E|L|=0.64282
+    Train  E:1/1      B:1900     E|L|=0.66497
+    Train  E:1/1      B:2000     E|L|=0.63904
+    Train  E:1/1      B:2100     E|L|=0.64883
+    Train  E:1/1      B:2200     E|L|=0.62616
+    Train  E:1/1      B:2300     E|L|=0.63470
+    Train  E:1/1      B:2400     E|L|=0.67025
+    Train  E:1/1      B:2500     E|L|=0.64786
+    Train  E:1/1      B:2600     E|L|=0.63121
+    Train  E:1/1      B:2700     E|L|=0.63667
+    Train  E:1/1      B:2800     E|L|=0.63506
+    Train  E:1/1      B:2900     E|L|=0.65314
+    Test   E:1/1      B:100  E|L|=0.64672
+  Epoch  E:1/1      Train/T=180.9s     Train/E|L|=0.66181  Test/T=2.2s       Test/E|L|=0.64425
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.62305  (len corr: 0.027)
+            F1: 0.62296
+    Train time: 180.9s
+
+IMDb / Perc (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.69700
+    Train  E:1/1      B:200      E|L|=0.68926
+    Train  E:1/1      B:300      E|L|=0.68764
+    Train  E:1/1      B:400      E|L|=0.67567
+    Train  E:1/1      B:500      E|L|=0.69365
+    Train  E:1/1      B:600      E|L|=0.68638
+    Train  E:1/1      B:700      E|L|=0.67477
+    Train  E:1/1      B:800      E|L|=0.68501
+    Train  E:1/1      B:900      E|L|=0.67995
+    Train  E:1/1      B:1000     E|L|=0.68517
+    Train  E:1/1      B:1100     E|L|=0.67742
+    Train  E:1/1      B:1200     E|L|=0.67797
+    Train  E:1/1      B:1300     E|L|=0.66686
+    Train  E:1/1      B:1400     E|L|=0.66714
+    Train  E:1/1      B:1500     E|L|=0.67640
+    Train  E:1/1      B:1600     E|L|=0.66987
+    Train  E:1/1      B:1700     E|L|=0.67099
+    Train  E:1/1      B:1800     E|L|=0.66141
+    Train  E:1/1      B:1900     E|L|=0.65051
+    Train  E:1/1      B:2000     E|L|=0.64500
+    Train  E:1/1      B:2100     E|L|=0.67192
+    Train  E:1/1      B:2200     E|L|=0.65274
+    Train  E:1/1      B:2300     E|L|=0.65207
+    Train  E:1/1      B:2400     E|L|=0.65355
+    Train  E:1/1      B:2500     E|L|=0.66557
+    Train  E:1/1      B:2600     E|L|=0.65504
+    Train  E:1/1      B:2700     E|L|=0.66375
+    Train  E:1/1      B:2800     E|L|=0.65386
+    Train  E:1/1      B:2900     E|L|=0.66526
+    Test   E:1/1      B:100  E|L|=0.67479
+  Epoch  E:1/1      Train/T=183.6s     Train/E|L|=0.67069  Test/T=2.2s       Test/E|L|=0.64537
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.61074  (len corr: -0.032)
+            F1: 0.60702
+    Train time: 183.6s
+
+IMDb / Perc (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.69903
+    Train  E:1/1      B:200      E|L|=0.68925
+    Train  E:1/1      B:300      E|L|=0.68013
+    Train  E:1/1      B:400      E|L|=0.66555
+    Train  E:1/1      B:500      E|L|=0.66434
+    Train  E:1/1      B:600      E|L|=0.66515
+    Train  E:1/1      B:700      E|L|=0.64000
+    Train  E:1/1      B:800      E|L|=0.65083
+    Train  E:1/1      B:900      E|L|=0.65293
+    Train  E:1/1      B:1000     E|L|=0.66153
+    Train  E:1/1      B:1100     E|L|=0.66914
+    Train  E:1/1      B:1200     E|L|=0.67100
+    Train  E:1/1      B:1300     E|L|=0.65750
+    Train  E:1/1      B:1400     E|L|=0.64995
+    Train  E:1/1      B:1500     E|L|=0.67129
+    Train  E:1/1      B:1600     E|L|=0.66860
+    Train  E:1/1      B:1700     E|L|=0.66865
+    Train  E:1/1      B:1800     E|L|=0.65018
+    Train  E:1/1      B:1900     E|L|=0.67546
+    Train  E:1/1      B:2000     E|L|=0.64621
+    Train  E:1/1      B:2100     E|L|=0.67487
+    Train  E:1/1      B:2200     E|L|=0.67034
+    Train  E:1/1      B:2300     E|L|=0.66607
+    Train  E:1/1      B:2400     E|L|=0.65549
+    Train  E:1/1      B:2500     E|L|=0.66178
+    Train  E:1/1      B:2600     E|L|=0.65547
+    Train  E:1/1      B:2700     E|L|=0.65755
+    Train  E:1/1      B:2800     E|L|=0.67076
+    Train  E:1/1      B:2900     E|L|=0.65843
+    Test   E:1/1      B:100  E|L|=0.65319
+  Epoch  E:1/1      Train/T=183.8s     Train/E|L|=0.66440  Test/T=2.1s       Test/E|L|=0.65390
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.61127  (len corr: -0.017)
+            F1: 0.61115
+    Train time: 183.8s
+
+IMDb / Perc (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.69658
+    Train  E:1/1      B:200      E|L|=0.69696
+    Train  E:1/1      B:300      E|L|=0.69577
+    Train  E:1/1      B:400      E|L|=0.69415
+    Train  E:1/1      B:500      E|L|=0.69353
+    Train  E:1/1      B:600      E|L|=0.69026
+    Train  E:1/1      B:700      E|L|=0.69374
+    Train  E:1/1      B:800      E|L|=0.69256
+    Train  E:1/1      B:900      E|L|=0.69189
+    Train  E:1/1      B:1000     E|L|=0.69122
+    Train  E:1/1      B:1100     E|L|=0.68551
+    Train  E:1/1      B:1200     E|L|=0.68059
+    Train  E:1/1      B:1300     E|L|=0.68895
+    Train  E:1/1      B:1400     E|L|=0.68731
+    Train  E:1/1      B:1500     E|L|=0.68141
+    Train  E:1/1      B:1600     E|L|=0.68642
+    Train  E:1/1      B:1700     E|L|=0.68961
+    Train  E:1/1      B:1800     E|L|=0.68540
+    Train  E:1/1      B:1900     E|L|=0.67914
+    Train  E:1/1      B:2000     E|L|=0.68276
+    Train  E:1/1      B:2100     E|L|=0.67407
+    Train  E:1/1      B:2200     E|L|=0.67806
+    Train  E:1/1      B:2300     E|L|=0.66925
+    Train  E:1/1      B:2400     E|L|=0.68265
+    Train  E:1/1      B:2500     E|L|=0.67745
+    Train  E:1/1      B:2600     E|L|=0.66772
+    Train  E:1/1      B:2700     E|L|=0.67395
+    Train  E:1/1      B:2800     E|L|=0.67287
+    Train  E:1/1      B:2900     E|L|=0.67079
+    Test   E:1/1      B:100  E|L|=0.67623
+  Epoch  E:1/1      Train/T=184.1s     Train/E|L|=0.68456  Test/T=2.2s       Test/E|L|=0.67338
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.55844  (len corr: 0.074)
+            F1: 0.55827
+    Train time: 184.1s
+
+IMDb / Perc/seql (1)
+  Random seed: 12387
+    Train  E:1/1      B:100      E|L|=0.69734
+    Train  E:1/1      B:200      E|L|=0.68856
+    Train  E:1/1      B:300      E|L|=0.68735
+    Train  E:1/1      B:400      E|L|=0.69271
+    Train  E:1/1      B:500      E|L|=0.69774
+    Train  E:1/1      B:600      E|L|=0.69326
+    Train  E:1/1      B:700      E|L|=0.69111
+    Train  E:1/1      B:800      E|L|=0.69351
+    Train  E:1/1      B:900      E|L|=0.69311
+    Train  E:1/1      B:1000     E|L|=0.69019
+    Train  E:1/1      B:1100     E|L|=0.68941
+    Train  E:1/1      B:1200     E|L|=0.68467
+    Train  E:1/1      B:1300     E|L|=0.68956
+    Train  E:1/1      B:1400     E|L|=0.68473
+    Train  E:1/1      B:1500     E|L|=0.69244
+    Train  E:1/1      B:1600     E|L|=0.68684
+    Train  E:1/1      B:1700     E|L|=0.69196
+    Train  E:1/1      B:1800     E|L|=0.68611
+    Train  E:1/1      B:1900     E|L|=0.69175
+    Train  E:1/1      B:2000     E|L|=0.68690
+    Train  E:1/1      B:2100     E|L|=0.69157
+    Train  E:1/1      B:2200     E|L|=0.68194
+    Train  E:1/1      B:2300     E|L|=0.68471
+    Train  E:1/1      B:2400     E|L|=0.69231
+    Train  E:1/1      B:2500     E|L|=0.69251
+    Train  E:1/1      B:2600     E|L|=0.69309
+    Train  E:1/1      B:2700     E|L|=0.69299
+    Train  E:1/1      B:2800     E|L|=0.68745
+    Train  E:1/1      B:2900     E|L|=0.68752
+    Test   E:1/1      B:100  E|L|=0.69392
+  Epoch  E:1/1      Train/T=186.7s     Train/E|L|=0.69011  Test/T=2.3s       Test/E|L|=0.68668
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.56186  (len corr: 0.033)
+            F1: 0.55961
+    Train time: 186.7s
+
+IMDb / Perc/seql (2)
+  Random seed: 12429
+    Train  E:1/1      B:100      E|L|=0.68813
+    Train  E:1/1      B:200      E|L|=0.67986
+    Train  E:1/1      B:300      E|L|=0.67676
+    Train  E:1/1      B:400      E|L|=0.67182
+    Train  E:1/1      B:500      E|L|=0.68082
+    Train  E:1/1      B:600      E|L|=0.66130
+    Train  E:1/1      B:700      E|L|=0.66888
+    Train  E:1/1      B:800      E|L|=0.68171
+    Train  E:1/1      B:900      E|L|=0.67293
+    Train  E:1/1      B:1000     E|L|=0.65928
+    Train  E:1/1      B:1100     E|L|=0.65905
+    Train  E:1/1      B:1200     E|L|=0.67908
+    Train  E:1/1      B:1300     E|L|=0.68273
+    Train  E:1/1      B:1400     E|L|=0.66721
+    Train  E:1/1      B:1500     E|L|=0.67339
+    Train  E:1/1      B:1600     E|L|=0.67416
+    Train  E:1/1      B:1700     E|L|=0.68280
+    Train  E:1/1      B:1800     E|L|=0.65890
+    Train  E:1/1      B:1900     E|L|=0.66098
+    Train  E:1/1      B:2000     E|L|=0.66184
+    Train  E:1/1      B:2100     E|L|=0.66952
+    Train  E:1/1      B:2200     E|L|=0.66320
+    Train  E:1/1      B:2300     E|L|=0.67558
+    Train  E:1/1      B:2400     E|L|=0.66481
+    Train  E:1/1      B:2500     E|L|=0.66986
+    Train  E:1/1      B:2600     E|L|=0.66198
+    Train  E:1/1      B:2700     E|L|=0.66301
+    Train  E:1/1      B:2800     E|L|=0.67104
+    Train  E:1/1      B:2900     E|L|=0.66652
+    Test   E:1/1      B:100  E|L|=0.65699
+  Epoch  E:1/1      Train/T=186.9s     Train/E|L|=0.67049  Test/T=2.2s       Test/E|L|=0.66600
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.58799  (len corr: 0.042)
+            F1: 0.58581
+    Train time: 186.9s
+
+IMDb / Perc/seql (3)
+  Random seed: 12471
+    Train  E:1/1      B:100      E|L|=0.69936
+    Train  E:1/1      B:200      E|L|=0.69443
+    Train  E:1/1      B:300      E|L|=0.69379
+    Train  E:1/1      B:400      E|L|=0.69324
+    Train  E:1/1      B:500      E|L|=0.69116
+    Train  E:1/1      B:600      E|L|=0.68662
+    Train  E:1/1      B:700      E|L|=0.68778
+    Train  E:1/1      B:800      E|L|=0.68069
+    Train  E:1/1      B:900      E|L|=0.67942
+    Train  E:1/1      B:1000     E|L|=0.68670
+    Train  E:1/1      B:1100     E|L|=0.67661
+    Train  E:1/1      B:1200     E|L|=0.67446
+    Train  E:1/1      B:1300     E|L|=0.68803
+    Train  E:1/1      B:1400     E|L|=0.67794
+    Train  E:1/1      B:1500     E|L|=0.66415
+    Train  E:1/1      B:1600     E|L|=0.67237
+    Train  E:1/1      B:1700     E|L|=0.68007
+    Train  E:1/1      B:1800     E|L|=0.67133
+    Train  E:1/1      B:1900     E|L|=0.66415
+    Train  E:1/1      B:2000     E|L|=0.66776
+    Train  E:1/1      B:2100     E|L|=0.65612
+    Train  E:1/1      B:2200     E|L|=0.65301
+    Train  E:1/1      B:2300     E|L|=0.64798
+    Train  E:1/1      B:2400     E|L|=0.66708
+    Train  E:1/1      B:2500     E|L|=0.64461
+    Train  E:1/1      B:2600     E|L|=0.65681
+    Train  E:1/1      B:2700     E|L|=0.68235
+    Train  E:1/1      B:2800     E|L|=0.65975
+    Train  E:1/1      B:2900     E|L|=0.65278
+    Test   E:1/1      B:100  E|L|=0.67783
+  Epoch  E:1/1      Train/T=185.0s     Train/E|L|=0.67418  Test/T=2.2s       Test/E|L|=0.67510
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.59146  (len corr: 0.089)
+            F1: 0.59145
+    Train time: 185.0s
+
+IMDb / Softmax+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.77093
+    Train  E:1/1      B:200      E|L|=0.69547
+    Train  E:1/1      B:300      E|L|=0.69519
+    Train  E:1/1      B:400      E|L|=0.68280
+    Train  E:1/1      B:500      E|L|=0.55220
+    Train  E:1/1      B:600      E|L|=0.46749
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.39383
+    Train  E:1/1      B:800      E|L|=0.34789
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.41821
+    Train  E:1/1      B:1000     E|L|=0.32065
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.39184
+    Train  E:1/1      B:1200     E|L|=0.34816
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.30531
+    Train  E:1/1      B:1400     E|L|=0.31882
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.30380
+    Train  E:1/1      B:1600     E|L|=0.33186
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.31077
+    Train  E:1/1      B:1800     E|L|=0.28239
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.30478
+    Train  E:1/1      B:2000     E|L|=0.25832
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.28031
+    Train  E:1/1      B:2200     E|L|=0.26594
+    Train  E:1/1      B:2300     E|L|=0.29442
+    Train  E:1/1      B:2400     E|L|=0.28350
+    Train  E:1/1      B:2500     E|L|=0.29324
+    Train  E:1/1      B:2600     E|L|=0.28845
+    Train  E:1/1      B:2700     E|L|=0.28918
+    Train  E:1/1      B:2800     E|L|=0.27721
+    Train  E:1/1      B:2900     E|L|=0.33011
+    Test   E:1/1      B:100  E|L|=0.22634
+  Epoch  E:1/1      Train/T=486.9s     Train/E|L|=0.38264  Test/T=6.5s       Test/E|L|=0.25488
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.87167  (len corr: -0.027)
+            F1: 0.87154
+    Train time: 486.9s
+
+IMDb / Softmax+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.78555
+    Train  E:1/1      B:200      E|L|=0.69763
+    Train  E:1/1      B:300      E|L|=0.69110
+    Train  E:1/1      B:400      E|L|=0.67206
+    Train  E:1/1      B:500      E|L|=0.51180
+    Train  E:1/1      B:600      E|L|=0.39430
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.33165
+    Train  E:1/1      B:800      E|L|=0.30200
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.39566
+    Train  E:1/1      B:1000     E|L|=0.30698
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.30448
+    Train  E:1/1      B:1200     E|L|=0.31960
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.32246
+    Train  E:1/1      B:1400     E|L|=0.28690
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.32338
+    Train  E:1/1      B:1600     E|L|=0.32572
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.35188
+    Train  E:1/1      B:1800     E|L|=0.28902
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.28251
+    Train  E:1/1      B:2000     E|L|=0.29528
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.28137
+    Train  E:1/1      B:2200     E|L|=0.32441
+    Train  E:1/1      B:2300     E|L|=0.28618
+    Train  E:1/1      B:2400     E|L|=0.27564
+    Train  E:1/1      B:2500     E|L|=0.36572
+    Train  E:1/1      B:2600     E|L|=0.34552
+    Train  E:1/1      B:2700     E|L|=0.29115
+    Train  E:1/1      B:2800     E|L|=0.36369
+    Train  E:1/1      B:2900     E|L|=0.32089
+    Test   E:1/1      B:100  E|L|=0.31455
+  Epoch  E:1/1      Train/T=482.9s     Train/E|L|=0.38022  Test/T=6.4s       Test/E|L|=0.30735
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.85488  (len corr: -0.041)
+            F1: 0.85463
+    Train time: 482.9s
+
+IMDb / Softmax+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.72170
+    Train  E:1/1      B:200      E|L|=0.69385
+    Train  E:1/1      B:300      E|L|=0.61848
+    Train  E:1/1      B:400      E|L|=0.48510
+    Train  E:1/1      B:500      E|L|=0.39977
+    Train  E:1/1      B:600      E|L|=0.35004
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.34645
+    Train  E:1/1      B:800      E|L|=0.33833
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.30196
+    Train  E:1/1      B:1000     E|L|=0.35420
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.32627
+    Train  E:1/1      B:1200     E|L|=0.26465
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.30753
+    Train  E:1/1      B:1400     E|L|=0.30833
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.33944
+    Train  E:1/1      B:1600     E|L|=0.31981
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.33652
+    Train  E:1/1      B:1800     E|L|=0.30086
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.37511
+    Train  E:1/1      B:2000     E|L|=0.33651
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.28918
+    Train  E:1/1      B:2200     E|L|=0.35270
+    Train  E:1/1      B:2300     E|L|=0.35450
+    Train  E:1/1      B:2400     E|L|=0.35506
+    Train  E:1/1      B:2500     E|L|=0.35384
+    Train  E:1/1      B:2600     E|L|=0.33672
+    Train  E:1/1      B:2700     E|L|=0.30820
+    Train  E:1/1      B:2800     E|L|=0.31597
+    Train  E:1/1      B:2900     E|L|=0.33548
+    Test   E:1/1      B:100  E|L|=0.36149
+  Epoch  E:1/1      Train/T=483.8s     Train/E|L|=0.37282  Test/T=6.5s       Test/E|L|=0.33547
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.84868  (len corr: -0.028)
+            F1: 0.84861
+    Train time: 483.8s
+
+IMDb / ReLU+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.71948
+    Train  E:1/1      B:200      E|L|=0.69751
+    Train  E:1/1      B:300      E|L|=0.69225
+    Train  E:1/1      B:400      E|L|=0.65703
+    Train  E:1/1      B:500      E|L|=0.49546
+    Train  E:1/1      B:600      E|L|=0.41745
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.38245
+    Train  E:1/1      B:800      E|L|=0.31708
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.37869
+    Train  E:1/1      B:1000     E|L|=0.29291
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.36762
+    Train  E:1/1      B:1200     E|L|=0.31080
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.28787
+    Train  E:1/1      B:1400     E|L|=0.31094
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.28835
+    Train  E:1/1      B:1600     E|L|=0.29957
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.28598
+    Train  E:1/1      B:1800     E|L|=0.25207
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.29643
+    Train  E:1/1      B:2000     E|L|=0.24517
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.28914
+    Train  E:1/1      B:2200     E|L|=0.26331
+    Train  E:1/1      B:2300     E|L|=0.28814
+    Train  E:1/1      B:2400     E|L|=0.28056
+    Train  E:1/1      B:2500     E|L|=0.26927
+    Train  E:1/1      B:2600     E|L|=0.25450
+    Train  E:1/1      B:2700     E|L|=0.26412
+    Train  E:1/1      B:2800     E|L|=0.26631
+    Train  E:1/1      B:2900     E|L|=0.30936
+    Test   E:1/1      B:100  E|L|=0.20680
+  Epoch  E:1/1      Train/T=455.1s     Train/E|L|=0.36114  Test/T=6.2s       Test/E|L|=0.24297
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88109  (len corr: -0.039)
+            F1: 0.88097
+    Train time: 455.1s
+
+IMDb / ReLU+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.72604
+    Train  E:1/1      B:200      E|L|=0.70220
+    Train  E:1/1      B:300      E|L|=0.66648
+    Train  E:1/1      B:400      E|L|=0.45016
+    Train  E:1/1      B:500      E|L|=0.40423
+    Train  E:1/1      B:600      E|L|=0.37213
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.31688
+    Train  E:1/1      B:800      E|L|=0.30348
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.35698
+    Train  E:1/1      B:1000     E|L|=0.31604
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.30745
+    Train  E:1/1      B:1200     E|L|=0.30218
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.32021
+    Train  E:1/1      B:1400     E|L|=0.28558
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.31989
+    Train  E:1/1      B:1600     E|L|=0.28275
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.30888
+    Train  E:1/1      B:1800     E|L|=0.24408
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.29258
+    Train  E:1/1      B:2000     E|L|=0.26681
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.27251
+    Train  E:1/1      B:2200     E|L|=0.30318
+    Train  E:1/1      B:2300     E|L|=0.27384
+    Train  E:1/1      B:2400     E|L|=0.24726
+    Train  E:1/1      B:2500     E|L|=0.30965
+    Train  E:1/1      B:2600     E|L|=0.28322
+    Train  E:1/1      B:2700     E|L|=0.26604
+    Train  E:1/1      B:2800     E|L|=0.28547
+    Train  E:1/1      B:2900     E|L|=0.25255
+    Test   E:1/1      B:100  E|L|=0.22006
+  Epoch  E:1/1      Train/T=450.0s     Train/E|L|=0.34575  Test/T=6.2s       Test/E|L|=0.24470
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88280  (len corr: -0.030)
+            F1: 0.88274
+    Train time: 450.0s
+
+IMDb / ReLU+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.72216
+    Train  E:1/1      B:200      E|L|=0.69525
+    Train  E:1/1      B:300      E|L|=0.69531
+    Train  E:1/1      B:400      E|L|=0.69933
+    Train  E:1/1      B:500      E|L|=0.69840
+    Train  E:1/1      B:600      E|L|=0.69334
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68874
+    Train  E:1/1      B:800      E|L|=0.66273
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.45271
+    Train  E:1/1      B:1000     E|L|=0.41828
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.39062
+    Train  E:1/1      B:1200     E|L|=0.29222
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.30708
+    Train  E:1/1      B:1400     E|L|=0.30083
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.29962
+    Train  E:1/1      B:1600     E|L|=0.28396
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.30239
+    Train  E:1/1      B:1800     E|L|=0.28368
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.31933
+    Train  E:1/1      B:2000     E|L|=0.25562
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.25681
+    Train  E:1/1      B:2200     E|L|=0.28272
+    Train  E:1/1      B:2300     E|L|=0.25900
+    Train  E:1/1      B:2400     E|L|=0.28900
+    Train  E:1/1      B:2500     E|L|=0.29824
+    Train  E:1/1      B:2600     E|L|=0.28545
+    Train  E:1/1      B:2700     E|L|=0.24652
+    Train  E:1/1      B:2800     E|L|=0.26983
+    Train  E:1/1      B:2900     E|L|=0.26137
+    Test   E:1/1      B:100  E|L|=0.22559
+  Epoch  E:1/1      Train/T=447.4s     Train/E|L|=0.40980  Test/T=6.2s       Test/E|L|=0.24222
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88402  (len corr: -0.014)
+            F1: 0.88399
+    Train time: 447.4s
+
+IMDb / ReLU/seql+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.71853
+    Train  E:1/1      B:200      E|L|=0.69591
+    Train  E:1/1      B:300      E|L|=0.69394
+    Train  E:1/1      B:400      E|L|=0.64498
+    Train  E:1/1      B:500      E|L|=0.51698
+    Train  E:1/1      B:600      E|L|=0.41601
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.39500
+    Train  E:1/1      B:800      E|L|=0.34352
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.36995
+    Train  E:1/1      B:1000     E|L|=0.29495
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.37922
+    Train  E:1/1      B:1200     E|L|=0.32963
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.28012
+    Train  E:1/1      B:1400     E|L|=0.31540
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.31545
+    Train  E:1/1      B:1600     E|L|=0.31865
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.27603
+    Train  E:1/1      B:1800     E|L|=0.24479
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.29090
+    Train  E:1/1      B:2000     E|L|=0.24518
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.27757
+    Train  E:1/1      B:2200     E|L|=0.27901
+    Train  E:1/1      B:2300     E|L|=0.27717
+    Train  E:1/1      B:2400     E|L|=0.30826
+    Train  E:1/1      B:2500     E|L|=0.27046
+    Train  E:1/1      B:2600     E|L|=0.26284
+    Train  E:1/1      B:2700     E|L|=0.29524
+    Train  E:1/1      B:2800     E|L|=0.28370
+    Train  E:1/1      B:2900     E|L|=0.31606
+    Test   E:1/1      B:100  E|L|=0.21139
+  Epoch  E:1/1      Train/T=454.3s     Train/E|L|=0.36711  Test/T=6.2s       Test/E|L|=0.23819
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88374  (len corr: -0.009)
+            F1: 0.88366
+    Train time: 454.3s
+
+IMDb / ReLU/seql+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.72089
+    Train  E:1/1      B:200      E|L|=0.70106
+    Train  E:1/1      B:300      E|L|=0.59841
+    Train  E:1/1      B:400      E|L|=0.44516
+    Train  E:1/1      B:500      E|L|=0.40489
+    Train  E:1/1      B:600      E|L|=0.37257
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.33197
+    Train  E:1/1      B:800      E|L|=0.30406
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.34109
+    Train  E:1/1      B:1000     E|L|=0.31638
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.29856
+    Train  E:1/1      B:1200     E|L|=0.30047
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.32844
+    Train  E:1/1      B:1400     E|L|=0.28757
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.30358
+    Train  E:1/1      B:1600     E|L|=0.30351
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.34310
+    Train  E:1/1      B:1800     E|L|=0.28017
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.31808
+    Train  E:1/1      B:2000     E|L|=0.27826
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.27343
+    Train  E:1/1      B:2200     E|L|=0.32639
+    Train  E:1/1      B:2300     E|L|=0.27797
+    Train  E:1/1      B:2400     E|L|=0.27346
+    Train  E:1/1      B:2500     E|L|=0.31014
+    Train  E:1/1      B:2600     E|L|=0.29478
+    Train  E:1/1      B:2700     E|L|=0.26992
+    Train  E:1/1      B:2800     E|L|=0.28635
+    Train  E:1/1      B:2900     E|L|=0.25430
+    Test   E:1/1      B:100  E|L|=0.21283
+  Epoch  E:1/1      Train/T=452.5s     Train/E|L|=0.34931  Test/T=6.3s       Test/E|L|=0.24679
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88117  (len corr: -0.009)
+            F1: 0.88104
+    Train time: 452.5s
+
+IMDb / ReLU/seql+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.72220
+    Train  E:1/1      B:200      E|L|=0.69221
+    Train  E:1/1      B:300      E|L|=0.63260
+    Train  E:1/1      B:400      E|L|=0.50414
+    Train  E:1/1      B:500      E|L|=0.43477
+    Train  E:1/1      B:600      E|L|=0.36983
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.36792
+    Train  E:1/1      B:800      E|L|=0.34733
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.30067
+    Train  E:1/1      B:1000     E|L|=0.35423
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.31965
+    Train  E:1/1      B:1200     E|L|=0.29278
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.28677
+    Train  E:1/1      B:1400     E|L|=0.29143
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.30259
+    Train  E:1/1      B:1600     E|L|=0.28717
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.30502
+    Train  E:1/1      B:1800     E|L|=0.28352
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.28889
+    Train  E:1/1      B:2000     E|L|=0.28486
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.25335
+    Train  E:1/1      B:2200     E|L|=0.28779
+    Train  E:1/1      B:2300     E|L|=0.27996
+    Train  E:1/1      B:2400     E|L|=0.28828
+    Train  E:1/1      B:2500     E|L|=0.28993
+    Train  E:1/1      B:2600     E|L|=0.28014
+    Train  E:1/1      B:2700     E|L|=0.22957
+    Train  E:1/1      B:2800     E|L|=0.29849
+    Train  E:1/1      B:2900     E|L|=0.26716
+    Test   E:1/1      B:100  E|L|=0.22711
+  Epoch  E:1/1      Train/T=447.6s     Train/E|L|=0.34914  Test/T=6.2s       Test/E|L|=0.24863
+  Metrics...
+    Model size: 2_251_585
+      Accuracy: 0.88370  (len corr: -0.016)
+            F1: 0.88367
+    Train time: 447.6s
+
+IMDb / SReLU+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.71242
+    Train  E:1/1      B:200      E|L|=0.68079
+    Train  E:1/1      B:300      E|L|=0.55632
+    Train  E:1/1      B:400      E|L|=0.44821
+    Train  E:1/1      B:500      E|L|=0.44533
+    Train  E:1/1      B:600      E|L|=0.40784
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.34706
+    Train  E:1/1      B:800      E|L|=0.33250
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.37414
+    Train  E:1/1      B:1000     E|L|=0.28686
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.37915
+    Train  E:1/1      B:1200     E|L|=0.30600
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.29656
+    Train  E:1/1      B:1400     E|L|=0.32667
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.30342
+    Train  E:1/1      B:1600     E|L|=0.29813
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.30928
+    Train  E:1/1      B:1800     E|L|=0.27541
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.29417
+    Train  E:1/1      B:2000     E|L|=0.27636
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.27385
+    Train  E:1/1      B:2200     E|L|=0.27668
+    Train  E:1/1      B:2300     E|L|=0.29614
+    Train  E:1/1      B:2400     E|L|=0.28905
+    Train  E:1/1      B:2500     E|L|=0.26554
+    Train  E:1/1      B:2600     E|L|=0.24149
+    Train  E:1/1      B:2700     E|L|=0.29173
+    Train  E:1/1      B:2800     E|L|=0.27394
+    Train  E:1/1      B:2900     E|L|=0.30527
+    Test   E:1/1      B:100  E|L|=0.22646
+  Epoch  E:1/1      Train/T=267.2s     Train/E|L|=0.35036  Test/T=2.9s       Test/E|L|=0.25211
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87432  (len corr: -0.022)
+            F1: 0.87412
+    Train time: 267.2s
+
+IMDb / SReLU+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69884
+    Train  E:1/1      B:200      E|L|=0.58235
+    Train  E:1/1      B:300      E|L|=0.45946
+    Train  E:1/1      B:400      E|L|=0.37138
+    Train  E:1/1      B:500      E|L|=0.39420
+    Train  E:1/1      B:600      E|L|=0.39522
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.40488
+    Train  E:1/1      B:800      E|L|=0.32276
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.40537
+    Train  E:1/1      B:1000     E|L|=0.33124
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.34401
+    Train  E:1/1      B:1200     E|L|=0.30539
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.35115
+    Train  E:1/1      B:1400     E|L|=0.28611
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.35343
+    Train  E:1/1      B:1600     E|L|=0.30292
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.31705
+    Train  E:1/1      B:1800     E|L|=0.27039
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.29707
+    Train  E:1/1      B:2000     E|L|=0.27594
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.29372
+    Train  E:1/1      B:2200     E|L|=0.30682
+    Train  E:1/1      B:2300     E|L|=0.27679
+    Train  E:1/1      B:2400     E|L|=0.28450
+    Train  E:1/1      B:2500     E|L|=0.32797
+    Train  E:1/1      B:2600     E|L|=0.27754
+    Train  E:1/1      B:2700     E|L|=0.28139
+    Train  E:1/1      B:2800     E|L|=0.28409
+    Train  E:1/1      B:2900     E|L|=0.26179
+    Test   E:1/1      B:100  E|L|=0.22144
+  Epoch  E:1/1      Train/T=266.9s     Train/E|L|=0.34660  Test/T=3.0s       Test/E|L|=0.24837
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87983  (len corr: -0.029)
+            F1: 0.87978
+    Train time: 266.9s
+
+IMDb / SReLU+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.71710
+    Train  E:1/1      B:200      E|L|=0.69337
+    Train  E:1/1      B:300      E|L|=0.66410
+    Train  E:1/1      B:400      E|L|=0.55427
+    Train  E:1/1      B:500      E|L|=0.43682
+    Train  E:1/1      B:600      E|L|=0.41242
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.38958
+    Train  E:1/1      B:800      E|L|=0.37172
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.34832
+    Train  E:1/1      B:1000     E|L|=0.35431
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.35244
+    Train  E:1/1      B:1200     E|L|=0.28509
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.31316
+    Train  E:1/1      B:1400     E|L|=0.30910
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.31250
+    Train  E:1/1      B:1600     E|L|=0.29462
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.31927
+    Train  E:1/1      B:1800     E|L|=0.29202
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.29475
+    Train  E:1/1      B:2000     E|L|=0.27262
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.27103
+    Train  E:1/1      B:2200     E|L|=0.29144
+    Train  E:1/1      B:2300     E|L|=0.28731
+    Train  E:1/1      B:2400     E|L|=0.28012
+    Train  E:1/1      B:2500     E|L|=0.29051
+    Train  E:1/1      B:2600     E|L|=0.27920
+    Train  E:1/1      B:2700     E|L|=0.23243
+    Train  E:1/1      B:2800     E|L|=0.28913
+    Train  E:1/1      B:2900     E|L|=0.26952
+    Test   E:1/1      B:100  E|L|=0.19362
+  Epoch  E:1/1      Train/T=263.7s     Train/E|L|=0.36072  Test/T=3.0s       Test/E|L|=0.24975
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87885  (len corr: -0.015)
+            F1: 0.87854
+    Train time: 263.7s
+
+IMDb / SReLU/noscl+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.70743
+    Train  E:1/1      B:200      E|L|=0.69742
+    Train  E:1/1      B:300      E|L|=0.66136
+    Train  E:1/1      B:400      E|L|=0.55679
+    Train  E:1/1      B:500      E|L|=0.47629
+    Train  E:1/1      B:600      E|L|=0.41427
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.37162
+    Train  E:1/1      B:800      E|L|=0.33818
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.38424
+    Train  E:1/1      B:1000     E|L|=0.27593
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.37084
+    Train  E:1/1      B:1200     E|L|=0.31629
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.30759
+    Train  E:1/1      B:1400     E|L|=0.30455
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.29665
+    Train  E:1/1      B:1600     E|L|=0.28663
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.30690
+    Train  E:1/1      B:1800     E|L|=0.26788
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.31232
+    Train  E:1/1      B:2000     E|L|=0.27465
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.27041
+    Train  E:1/1      B:2200     E|L|=0.26411
+    Train  E:1/1      B:2300     E|L|=0.28633
+    Train  E:1/1      B:2400     E|L|=0.29373
+    Train  E:1/1      B:2500     E|L|=0.26191
+    Train  E:1/1      B:2600     E|L|=0.26374
+    Train  E:1/1      B:2700     E|L|=0.27386
+    Train  E:1/1      B:2800     E|L|=0.28088
+    Train  E:1/1      B:2900     E|L|=0.31817
+    Test   E:1/1      B:100  E|L|=0.21835
+  Epoch  E:1/1      Train/T=267.6s     Train/E|L|=0.35967  Test/T=3.0s       Test/E|L|=0.23414
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88366  (len corr: -0.028)
+            F1: 0.88361
+    Train time: 267.6s
+
+IMDb / SReLU/noscl+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69517
+    Train  E:1/1      B:200      E|L|=0.64349
+    Train  E:1/1      B:300      E|L|=0.50570
+    Train  E:1/1      B:400      E|L|=0.39993
+    Train  E:1/1      B:500      E|L|=0.37512
+    Train  E:1/1      B:600      E|L|=0.38892
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.33791
+    Train  E:1/1      B:800      E|L|=0.32925
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.36321
+    Train  E:1/1      B:1000     E|L|=0.30887
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.33201
+    Train  E:1/1      B:1200     E|L|=0.30304
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.31773
+    Train  E:1/1      B:1400     E|L|=0.27394
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.30450
+    Train  E:1/1      B:1600     E|L|=0.29780
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.28949
+    Train  E:1/1      B:1800     E|L|=0.26209
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.29177
+    Train  E:1/1      B:2000     E|L|=0.26398
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.28505
+    Train  E:1/1      B:2200     E|L|=0.31129
+    Train  E:1/1      B:2300     E|L|=0.26945
+    Train  E:1/1      B:2400     E|L|=0.25700
+    Train  E:1/1      B:2500     E|L|=0.31699
+    Train  E:1/1      B:2600     E|L|=0.28966
+    Train  E:1/1      B:2700     E|L|=0.27289
+    Train  E:1/1      B:2800     E|L|=0.29376
+    Train  E:1/1      B:2900     E|L|=0.25872
+    Test   E:1/1      B:100  E|L|=0.21762
+  Epoch  E:1/1      Train/T=266.1s     Train/E|L|=0.33871  Test/T=3.0s       Test/E|L|=0.24773
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88223  (len corr: -0.034)
+            F1: 0.88215
+    Train time: 266.1s
+
+IMDb / SReLU/noscl+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.72214
+    Train  E:1/1      B:200      E|L|=0.69248
+    Train  E:1/1      B:300      E|L|=0.68406
+    Train  E:1/1      B:400      E|L|=0.58964
+    Train  E:1/1      B:500      E|L|=0.52828
+    Train  E:1/1      B:600      E|L|=0.38936
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.38813
+    Train  E:1/1      B:800      E|L|=0.36863
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.32084
+    Train  E:1/1      B:1000     E|L|=0.38254
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.35177
+    Train  E:1/1      B:1200     E|L|=0.29218
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.30698
+    Train  E:1/1      B:1400     E|L|=0.28600
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.31443
+    Train  E:1/1      B:1600     E|L|=0.29849
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.33491
+    Train  E:1/1      B:1800     E|L|=0.30413
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.31022
+    Train  E:1/1      B:2000     E|L|=0.26868
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.26583
+    Train  E:1/1      B:2200     E|L|=0.28832
+    Train  E:1/1      B:2300     E|L|=0.28383
+    Train  E:1/1      B:2400     E|L|=0.28716
+    Train  E:1/1      B:2500     E|L|=0.28721
+    Train  E:1/1      B:2600     E|L|=0.30029
+    Train  E:1/1      B:2700     E|L|=0.23102
+    Train  E:1/1      B:2800     E|L|=0.28275
+    Train  E:1/1      B:2900     E|L|=0.26014
+    Test   E:1/1      B:100  E|L|=0.23777
+  Epoch  E:1/1      Train/T=267.5s     Train/E|L|=0.36564  Test/T=3.0s       Test/E|L|=0.25260
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.88162  (len corr: -0.006)
+            F1: 0.88161
+    Train time: 267.5s
+
+IMDb / SReLU/seql+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69976
+    Train  E:1/1      B:200      E|L|=0.67628
+    Train  E:1/1      B:300      E|L|=0.57111
+    Train  E:1/1      B:400      E|L|=0.48298
+    Train  E:1/1      B:500      E|L|=0.42810
+    Train  E:1/1      B:600      E|L|=0.38833
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.36873
+    Train  E:1/1      B:800      E|L|=0.32754
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.38228
+    Train  E:1/1      B:1000     E|L|=0.28316
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.38413
+    Train  E:1/1      B:1200     E|L|=0.32765
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.29545
+    Train  E:1/1      B:1400     E|L|=0.30108
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.30334
+    Train  E:1/1      B:1600     E|L|=0.29473
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.29907
+    Train  E:1/1      B:1800     E|L|=0.27037
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.30178
+    Train  E:1/1      B:2000     E|L|=0.26240
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.26846
+    Train  E:1/1      B:2200     E|L|=0.27787
+    Train  E:1/1      B:2300     E|L|=0.28078
+    Train  E:1/1      B:2400     E|L|=0.28122
+    Train  E:1/1      B:2500     E|L|=0.26271
+    Train  E:1/1      B:2600     E|L|=0.24559
+    Train  E:1/1      B:2700     E|L|=0.28320
+    Train  E:1/1      B:2800     E|L|=0.27693
+    Train  E:1/1      B:2900     E|L|=0.32442
+    Test   E:1/1      B:100  E|L|=0.21283
+  Epoch  E:1/1      Train/T=276.3s     Train/E|L|=0.34958  Test/T=3.1s       Test/E|L|=0.24383
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87962  (len corr: -0.020)
+            F1: 0.87949
+    Train time: 276.3s
+
+IMDb / SReLU/seql+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69543
+    Train  E:1/1      B:200      E|L|=0.57531
+    Train  E:1/1      B:300      E|L|=0.44480
+    Train  E:1/1      B:400      E|L|=0.39857
+    Train  E:1/1      B:500      E|L|=0.40160
+    Train  E:1/1      B:600      E|L|=0.39957
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.36493
+    Train  E:1/1      B:800      E|L|=0.33030
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.39090
+    Train  E:1/1      B:1000     E|L|=0.32284
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.33446
+    Train  E:1/1      B:1200     E|L|=0.32794
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.40998
+    Train  E:1/1      B:1400     E|L|=0.28102
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.34446
+    Train  E:1/1      B:1600     E|L|=0.30000
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.32535
+    Train  E:1/1      B:1800     E|L|=0.27970
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.30600
+    Train  E:1/1      B:2000     E|L|=0.29310
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.29039
+    Train  E:1/1      B:2200     E|L|=0.30870
+    Train  E:1/1      B:2300     E|L|=0.27148
+    Train  E:1/1      B:2400     E|L|=0.28840
+    Train  E:1/1      B:2500     E|L|=0.32653
+    Train  E:1/1      B:2600     E|L|=0.27617
+    Train  E:1/1      B:2700     E|L|=0.27815
+    Train  E:1/1      B:2800     E|L|=0.29677
+    Train  E:1/1      B:2900     E|L|=0.26931
+    Test   E:1/1      B:100  E|L|=0.22202
+  Epoch  E:1/1      Train/T=273.4s     Train/E|L|=0.34889  Test/T=3.1s       Test/E|L|=0.25899
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87954  (len corr: -0.028)
+            F1: 0.87945
+    Train time: 273.4s
+
+IMDb / SReLU/seql+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.70759
+    Train  E:1/1      B:200      E|L|=0.68658
+    Train  E:1/1      B:300      E|L|=0.61833
+    Train  E:1/1      B:400      E|L|=0.53781
+    Train  E:1/1      B:500      E|L|=0.43819
+    Train  E:1/1      B:600      E|L|=0.38426
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.40764
+    Train  E:1/1      B:800      E|L|=0.37055
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.35657
+    Train  E:1/1      B:1000     E|L|=0.37767
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.36954
+    Train  E:1/1      B:1200     E|L|=0.28635
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.31618
+    Train  E:1/1      B:1400     E|L|=0.30847
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.32806
+    Train  E:1/1      B:1600     E|L|=0.30917
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.33274
+    Train  E:1/1      B:1800     E|L|=0.29763
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.32424
+    Train  E:1/1      B:2000     E|L|=0.26099
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.29766
+    Train  E:1/1      B:2200     E|L|=0.30705
+    Train  E:1/1      B:2300     E|L|=0.29431
+    Train  E:1/1      B:2400     E|L|=0.30435
+    Train  E:1/1      B:2500     E|L|=0.30676
+    Train  E:1/1      B:2600     E|L|=0.31049
+    Train  E:1/1      B:2700     E|L|=0.24494
+    Train  E:1/1      B:2800     E|L|=0.29013
+    Train  E:1/1      B:2900     E|L|=0.29579
+    Test   E:1/1      B:100  E|L|=0.21261
+  Epoch  E:1/1      Train/T=270.9s     Train/E|L|=0.36729  Test/T=3.1s       Test/E|L|=0.26445
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.87987  (len corr: -0.020)
+            F1: 0.87972
+    Train time: 270.9s
+
+IMDb / UbPerc+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69514
+    Train  E:1/1      B:200      E|L|=0.68701
+    Train  E:1/1      B:300      E|L|=0.69151
+    Train  E:1/1      B:400      E|L|=0.69479
+    Train  E:1/1      B:500      E|L|=0.69445
+    Train  E:1/1      B:600      E|L|=0.69173
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68234
+    Train  E:1/1      B:800      E|L|=0.68272
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.69270
+    Train  E:1/1      B:1000     E|L|=0.68372
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.67801
+    Train  E:1/1      B:1200     E|L|=0.67015
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.66379
+    Train  E:1/1      B:1400     E|L|=0.64729
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.66472
+    Train  E:1/1      B:1600     E|L|=0.67028
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.65114
+    Train  E:1/1      B:1800     E|L|=0.63049
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.64321
+    Train  E:1/1      B:2000     E|L|=0.63824
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.61208
+    Train  E:1/1      B:2200     E|L|=0.61646
+    Train  E:1/1      B:2300     E|L|=0.63128
+    Train  E:1/1      B:2400     E|L|=0.62150
+    Train  E:1/1      B:2500     E|L|=0.61724
+    Train  E:1/1      B:2600     E|L|=0.61862
+    Train  E:1/1      B:2700     E|L|=0.59648
+    Train  E:1/1      B:2800     E|L|=0.58176
+    Train  E:1/1      B:2900     E|L|=0.58298
+    Test   E:1/1      B:100  E|L|=0.56070
+  Epoch  E:1/1      Train/T=213.2s     Train/E|L|=0.65253  Test/T=2.4s       Test/E|L|=0.55425
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.69744  (len corr: 0.014)
+            F1: 0.69741
+    Train time: 213.2s
+
+IMDb / UbPerc+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69602
+    Train  E:1/1      B:200      E|L|=0.68841
+    Train  E:1/1      B:300      E|L|=0.68589
+    Train  E:1/1      B:400      E|L|=0.67866
+    Train  E:1/1      B:500      E|L|=0.68783
+    Train  E:1/1      B:600      E|L|=0.68537
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68082
+    Train  E:1/1      B:800      E|L|=0.69004
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.69239
+    Train  E:1/1      B:1000     E|L|=0.69084
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.68701
+    Train  E:1/1      B:1200     E|L|=0.69049
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.69648
+    Train  E:1/1      B:1400     E|L|=0.69872
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.69010
+    Train  E:1/1      B:1600     E|L|=0.68801
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.68193
+    Train  E:1/1      B:1800     E|L|=0.68444
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.66665
+    Train  E:1/1      B:2000     E|L|=0.65209
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.66798
+    Train  E:1/1      B:2200     E|L|=0.65454
+    Train  E:1/1      B:2300     E|L|=0.62492
+    Train  E:1/1      B:2400     E|L|=0.64037
+    Train  E:1/1      B:2500     E|L|=0.63064
+    Train  E:1/1      B:2600     E|L|=0.63647
+    Train  E:1/1      B:2700     E|L|=0.61659
+    Train  E:1/1      B:2800     E|L|=0.64410
+    Train  E:1/1      B:2900     E|L|=0.61839
+    Test   E:1/1      B:100  E|L|=0.59145
+  Epoch  E:1/1      Train/T=210.9s     Train/E|L|=0.67051  Test/T=2.3s       Test/E|L|=0.63038
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.63882  (len corr: 0.060)
+            F1: 0.63608
+    Train time: 210.9s
+
+IMDb / UbPerc+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69701
+    Train  E:1/1      B:200      E|L|=0.68617
+    Train  E:1/1      B:300      E|L|=0.67569
+    Train  E:1/1      B:400      E|L|=0.67809
+    Train  E:1/1      B:500      E|L|=0.66839
+    Train  E:1/1      B:600      E|L|=0.68268
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.67313
+    Train  E:1/1      B:800      E|L|=0.66535
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.66469
+    Train  E:1/1      B:1000     E|L|=0.67465
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.65105
+    Train  E:1/1      B:1200     E|L|=0.64527
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.62297
+    Train  E:1/1      B:1400     E|L|=0.64428
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.62833
+    Train  E:1/1      B:1600     E|L|=0.64304
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.62536
+    Train  E:1/1      B:1800     E|L|=0.62864
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.61889
+    Train  E:1/1      B:2000     E|L|=0.62861
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.59512
+    Train  E:1/1      B:2200     E|L|=0.64388
+    Train  E:1/1      B:2300     E|L|=0.62545
+    Train  E:1/1      B:2400     E|L|=0.62849
+    Train  E:1/1      B:2500     E|L|=0.61606
+    Train  E:1/1      B:2600     E|L|=0.63085
+    Train  E:1/1      B:2700     E|L|=0.63354
+    Train  E:1/1      B:2800     E|L|=0.63088
+    Train  E:1/1      B:2900     E|L|=0.64391
+    Test   E:1/1      B:100  E|L|=0.68432
+  Epoch  E:1/1      Train/T=209.6s     Train/E|L|=0.64668  Test/T=2.3s       Test/E|L|=0.64760
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.63365  (len corr: -0.014)
+            F1: 0.63017
+    Train time: 209.6s
+
+IMDb / UbPerc/seql+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69629
+    Train  E:1/1      B:200      E|L|=0.69008
+    Train  E:1/1      B:300      E|L|=0.68357
+    Train  E:1/1      B:400      E|L|=0.68697
+    Train  E:1/1      B:500      E|L|=0.69210
+    Train  E:1/1      B:600      E|L|=0.68525
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68751
+    Train  E:1/1      B:800      E|L|=0.68646
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.66446
+    Train  E:1/1      B:1000     E|L|=0.65753
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.64948
+    Train  E:1/1      B:1200     E|L|=0.64988
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.62383
+    Train  E:1/1      B:1400     E|L|=0.63799
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.63290
+    Train  E:1/1      B:1600     E|L|=0.61426
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.62435
+    Train  E:1/1      B:1800     E|L|=0.62218
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.64812
+    Train  E:1/1      B:2000     E|L|=0.60663
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.59989
+    Train  E:1/1      B:2200     E|L|=0.59430
+    Train  E:1/1      B:2300     E|L|=0.59387
+    Train  E:1/1      B:2400     E|L|=0.61493
+    Train  E:1/1      B:2500     E|L|=0.61383
+    Train  E:1/1      B:2600     E|L|=0.58790
+    Train  E:1/1      B:2700     E|L|=0.56588
+    Train  E:1/1      B:2800     E|L|=0.55402
+    Train  E:1/1      B:2900     E|L|=0.54822
+    Test   E:1/1      B:100  E|L|=0.50870
+  Epoch  E:1/1      Train/T=214.2s     Train/E|L|=0.63450  Test/T=2.4s       Test/E|L|=0.52683
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.73144  (len corr: 0.004)
+            F1: 0.73132
+    Train time: 214.2s
+
+IMDb / UbPerc/seql+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.70011
+    Train  E:1/1      B:200      E|L|=0.69225
+    Train  E:1/1      B:300      E|L|=0.69126
+    Train  E:1/1      B:400      E|L|=0.69007
+    Train  E:1/1      B:500      E|L|=0.68864
+    Train  E:1/1      B:600      E|L|=0.68731
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68373
+    Train  E:1/1      B:800      E|L|=0.68265
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.68910
+    Train  E:1/1      B:1000     E|L|=0.68492
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.68275
+    Train  E:1/1      B:1200     E|L|=0.68060
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.67172
+    Train  E:1/1      B:1400     E|L|=0.67085
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.68768
+    Train  E:1/1      B:1600     E|L|=0.69252
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.69547
+    Train  E:1/1      B:1800     E|L|=0.69516
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.69719
+    Train  E:1/1      B:2000     E|L|=0.69950
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.69707
+    Train  E:1/1      B:2200     E|L|=0.69262
+    Train  E:1/1      B:2300     E|L|=0.69481
+    Train  E:1/1      B:2400     E|L|=0.69303
+    Train  E:1/1      B:2500     E|L|=0.68705
+    Train  E:1/1      B:2600     E|L|=0.68486
+    Train  E:1/1      B:2700     E|L|=0.67931
+    Train  E:1/1      B:2800     E|L|=0.68251
+    Train  E:1/1      B:2900     E|L|=0.67451
+    Test   E:1/1      B:100  E|L|=0.65894
+  Epoch  E:1/1      Train/T=216.0s     Train/E|L|=0.68769  Test/T=2.4s       Test/E|L|=0.68141
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.57262  (len corr: 0.011)
+            F1: 0.56565
+    Train time: 216.0s
+
+IMDb / UbPerc/seql+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69206
+    Train  E:1/1      B:200      E|L|=0.67969
+    Train  E:1/1      B:300      E|L|=0.66534
+    Train  E:1/1      B:400      E|L|=0.66671
+    Train  E:1/1      B:500      E|L|=0.66637
+    Train  E:1/1      B:600      E|L|=0.65979
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.65785
+    Train  E:1/1      B:800      E|L|=0.64101
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.63694
+    Train  E:1/1      B:1000     E|L|=0.65297
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.62674
+    Train  E:1/1      B:1200     E|L|=0.62898
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.63369
+    Train  E:1/1      B:1400     E|L|=0.61846
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.61470
+    Train  E:1/1      B:1600     E|L|=0.60716
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.62557
+    Train  E:1/1      B:1800     E|L|=0.61518
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.60607
+    Train  E:1/1      B:2000     E|L|=0.61166
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.60088
+    Train  E:1/1      B:2200     E|L|=0.58130
+    Train  E:1/1      B:2300     E|L|=0.58012
+    Train  E:1/1      B:2400     E|L|=0.58131
+    Train  E:1/1      B:2500     E|L|=0.56256
+    Train  E:1/1      B:2600     E|L|=0.57262
+    Train  E:1/1      B:2700     E|L|=0.52900
+    Train  E:1/1      B:2800     E|L|=0.55156
+    Train  E:1/1      B:2900     E|L|=0.52286
+    Test   E:1/1      B:100  E|L|=0.59576
+  Epoch  E:1/1      Train/T=214.7s     Train/E|L|=0.61653  Test/T=2.4s       Test/E|L|=0.55739
+  Metrics...
+    Model size: 1_691_713
+      Accuracy: 0.70474  (len corr: 0.009)
+            F1: 0.70415
+    Train time: 214.7s
+
+IMDb / Perc+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69916
+    Train  E:1/1      B:200      E|L|=0.69629
+    Train  E:1/1      B:300      E|L|=0.69346
+    Train  E:1/1      B:400      E|L|=0.69293
+    Train  E:1/1      B:500      E|L|=0.69475
+    Train  E:1/1      B:600      E|L|=0.69199
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.69548
+    Train  E:1/1      B:800      E|L|=0.69321
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.69728
+    Train  E:1/1      B:1000     E|L|=0.69260
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.69144
+    Train  E:1/1      B:1200     E|L|=0.67709
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.64746
+    Train  E:1/1      B:1400     E|L|=0.61624
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.59307
+    Train  E:1/1      B:1600     E|L|=0.62579
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.59437
+    Train  E:1/1      B:1800     E|L|=0.59983
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.62350
+    Train  E:1/1      B:2000     E|L|=0.60864
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.59362
+    Train  E:1/1      B:2200     E|L|=0.59966
+    Train  E:1/1      B:2300     E|L|=0.62131
+    Train  E:1/1      B:2400     E|L|=0.60051
+    Train  E:1/1      B:2500     E|L|=0.60509
+    Train  E:1/1      B:2600     E|L|=0.61708
+    Train  E:1/1      B:2700     E|L|=0.60412
+    Train  E:1/1      B:2800     E|L|=0.61437
+    Train  E:1/1      B:2900     E|L|=0.57581
+    Test   E:1/1      B:100  E|L|=0.56875
+  Epoch  E:1/1      Train/T=218.6s     Train/E|L|=0.64282  Test/T=2.3s       Test/E|L|=0.58933
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.67849  (len corr: 0.031)
+            F1: 0.67728
+    Train time: 218.6s
+
+IMDb / Perc+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69095
+    Train  E:1/1      B:200      E|L|=0.67755
+    Train  E:1/1      B:300      E|L|=0.67958
+    Train  E:1/1      B:400      E|L|=0.66854
+    Train  E:1/1      B:500      E|L|=0.67804
+    Train  E:1/1      B:600      E|L|=0.66932
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.66663
+    Train  E:1/1      B:800      E|L|=0.68214
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.66560
+    Train  E:1/1      B:1000     E|L|=0.65533
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.63825
+    Train  E:1/1      B:1200     E|L|=0.64676
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.63526
+    Train  E:1/1      B:1400     E|L|=0.63493
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.62833
+    Train  E:1/1      B:1600     E|L|=0.60511
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.59909
+    Train  E:1/1      B:1800     E|L|=0.58863
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.62878
+    Train  E:1/1      B:2000     E|L|=0.58609
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.57951
+    Train  E:1/1      B:2200     E|L|=0.59020
+    Train  E:1/1      B:2300     E|L|=0.54067
+    Train  E:1/1      B:2400     E|L|=0.49048
+    Train  E:1/1      B:2500     E|L|=0.48952
+    Train  E:1/1      B:2600     E|L|=0.47596
+    Train  E:1/1      B:2700     E|L|=0.41844
+    Train  E:1/1      B:2800     E|L|=0.44254
+    Train  E:1/1      B:2900     E|L|=0.37843
+    Test   E:1/1      B:100  E|L|=0.33041
+  Epoch  E:1/1      Train/T=212.9s     Train/E|L|=0.59670  Test/T=2.2s       Test/E|L|=0.34701
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.83115  (len corr: -0.025)
+            F1: 0.83115
+    Train time: 212.9s
+
+IMDb / Perc+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69581
+    Train  E:1/1      B:200      E|L|=0.69052
+    Train  E:1/1      B:300      E|L|=0.69739
+    Train  E:1/1      B:400      E|L|=0.69039
+    Train  E:1/1      B:500      E|L|=0.68387
+    Train  E:1/1      B:600      E|L|=0.68882
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68569
+    Train  E:1/1      B:800      E|L|=0.67634
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.67386
+    Train  E:1/1      B:1000     E|L|=0.64113
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.65960
+    Train  E:1/1      B:1200     E|L|=0.65341
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.64082
+    Train  E:1/1      B:1400     E|L|=0.62818
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.62527
+    Train  E:1/1      B:1600     E|L|=0.62670
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.64107
+    Train  E:1/1      B:1800     E|L|=0.64860
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.64680
+    Train  E:1/1      B:2000     E|L|=0.64439
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.67095
+    Train  E:1/1      B:2200     E|L|=0.67077
+    Train  E:1/1      B:2300     E|L|=0.66852
+    Train  E:1/1      B:2400     E|L|=0.68130
+    Train  E:1/1      B:2500     E|L|=0.68300
+    Train  E:1/1      B:2600     E|L|=0.67844
+    Train  E:1/1      B:2700     E|L|=0.68137
+    Train  E:1/1      B:2800     E|L|=0.68877
+    Train  E:1/1      B:2900     E|L|=0.69218
+    Test   E:1/1      B:100  E|L|=0.69717
+  Epoch  E:1/1      Train/T=212.4s     Train/E|L|=0.66744  Test/T=2.4s       Test/E|L|=0.67955
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.55522  (len corr: -0.039)
+            F1: 0.54819
+    Train time: 212.4s
+
+IMDb / Perc/seql+DI (1)
+  Random seed: 12387
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69710
+    Train  E:1/1      B:200      E|L|=0.69458
+    Train  E:1/1      B:300      E|L|=0.69120
+    Train  E:1/1      B:400      E|L|=0.68999
+    Train  E:1/1      B:500      E|L|=0.69275
+    Train  E:1/1      B:600      E|L|=0.67761
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68794
+    Train  E:1/1      B:800      E|L|=0.68368
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.68568
+    Train  E:1/1      B:1000     E|L|=0.69016
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.68259
+    Train  E:1/1      B:1200     E|L|=0.67582
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.67170
+    Train  E:1/1      B:1400     E|L|=0.67430
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.68216
+    Train  E:1/1      B:1600     E|L|=0.66027
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.64954
+    Train  E:1/1      B:1800     E|L|=0.61365
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.56593
+    Train  E:1/1      B:2000     E|L|=0.52416
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.47184
+    Train  E:1/1      B:2200     E|L|=0.44270
+    Train  E:1/1      B:2300     E|L|=0.44383
+    Train  E:1/1      B:2400     E|L|=0.39041
+    Train  E:1/1      B:2500     E|L|=0.37468
+    Train  E:1/1      B:2600     E|L|=0.41593
+    Train  E:1/1      B:2700     E|L|=0.37668
+    Train  E:1/1      B:2800     E|L|=0.36120
+    Train  E:1/1      B:2900     E|L|=0.38596
+    Test   E:1/1      B:100  E|L|=0.27652
+  Epoch  E:1/1      Train/T=215.8s     Train/E|L|=0.58391  Test/T=2.3s       Test/E|L|=0.31117
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.85484  (len corr: -0.017)
+            F1: 0.85431
+    Train time: 215.8s
+
+IMDb / Perc/seql+DI (2)
+  Random seed: 12429
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69699
+    Train  E:1/1      B:200      E|L|=0.69380
+    Train  E:1/1      B:300      E|L|=0.69238
+    Train  E:1/1      B:400      E|L|=0.69496
+    Train  E:1/1      B:500      E|L|=0.69232
+    Train  E:1/1      B:600      E|L|=0.69293
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.68809
+    Train  E:1/1      B:800      E|L|=0.69073
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.68660
+    Train  E:1/1      B:1000     E|L|=0.68153
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.67634
+    Train  E:1/1      B:1200     E|L|=0.68944
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.67871
+    Train  E:1/1      B:1400     E|L|=0.66589
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.65632
+    Train  E:1/1      B:1600     E|L|=0.63587
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.61603
+    Train  E:1/1      B:1800     E|L|=0.57398
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.54438
+    Train  E:1/1      B:2000     E|L|=0.47993
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.47049
+    Train  E:1/1      B:2200     E|L|=0.42960
+    Train  E:1/1      B:2300     E|L|=0.37562
+    Train  E:1/1      B:2400     E|L|=0.37676
+    Train  E:1/1      B:2500     E|L|=0.41351
+    Train  E:1/1      B:2600     E|L|=0.39707
+    Train  E:1/1      B:2700     E|L|=0.34015
+    Train  E:1/1      B:2800     E|L|=0.33991
+    Train  E:1/1      B:2900     E|L|=0.33421
+    Test   E:1/1      B:100  E|L|=0.22691
+  Epoch  E:1/1      Train/T=215.6s     Train/E|L|=0.57153  Test/T=2.4s       Test/E|L|=0.29103
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.85504  (len corr: -0.035)
+            F1: 0.85464
+    Train time: 215.6s
+
+IMDb / Perc/seql+DI (3)
+  Random seed: 12471
+    Drop-in: 0.200
+    Train  E:1/1      B:100      E|L|=0.69395
+    Train  E:1/1      B:200      E|L|=0.67841
+    Train  E:1/1      B:300      E|L|=0.68100
+    Train  E:1/1      B:400      E|L|=0.67736
+    Train  E:1/1      B:500      E|L|=0.67701
+    Train  E:1/1      B:600      E|L|=0.64116
+    Drop-in: 0.300
+    Train  E:1/1      B:700      E|L|=0.66758
+    Train  E:1/1      B:800      E|L|=0.64422
+    Drop-in: 0.400
+    Train  E:1/1      B:900      E|L|=0.64042
+    Train  E:1/1      B:1000     E|L|=0.66983
+    Drop-in: 0.500
+    Train  E:1/1      B:1100     E|L|=0.65904
+    Train  E:1/1      B:1200     E|L|=0.65207
+    Drop-in: 0.600
+    Train  E:1/1      B:1300     E|L|=0.63548
+    Train  E:1/1      B:1400     E|L|=0.64772
+    Drop-in: 0.700
+    Train  E:1/1      B:1500     E|L|=0.65700
+    Train  E:1/1      B:1600     E|L|=0.62446
+    Drop-in: 0.800
+    Train  E:1/1      B:1700     E|L|=0.60380
+    Train  E:1/1      B:1800     E|L|=0.59685
+    Drop-in: 0.900
+    Train  E:1/1      B:1900     E|L|=0.56146
+    Train  E:1/1      B:2000     E|L|=0.53533
+    Drop-in: 1.000
+    Train  E:1/1      B:2100     E|L|=0.49347
+    Train  E:1/1      B:2200     E|L|=0.46408
+    Train  E:1/1      B:2300     E|L|=0.43543
+    Train  E:1/1      B:2400     E|L|=0.46847
+    Train  E:1/1      B:2500     E|L|=0.41205
+    Train  E:1/1      B:2600     E|L|=0.40150
+    Train  E:1/1      B:2700     E|L|=0.36700
+    Train  E:1/1      B:2800     E|L|=0.45197
+    Train  E:1/1      B:2900     E|L|=0.38807
+    Test   E:1/1      B:100  E|L|=0.28544
+  Epoch  E:1/1      Train/T=211.7s     Train/E|L|=0.57558  Test/T=2.4s       Test/E|L|=0.35588
+  Metrics...
+    Model size: 1_878_337
+      Accuracy: 0.82761  (len corr: -0.005)
+            F1: 0.82648
+    Train time: 211.7s
+

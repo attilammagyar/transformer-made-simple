@@ -7802,7 +7802,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Transformer-Made-Simple-(draft)">Transformer Made Simple (draft)<a class="anchor-link" href="#Transformer-Made-Simple-(draft)">¶</a></h1><p>(Attila M. Magyar, 2026)</p>
+<h1 id="Transformer-Made-Simple">Transformer Made Simple<a class="anchor-link" href="#Transformer-Made-Simple">¶</a></h1><p>(Attila M. Magyar, 2026)</p>
 </div>
 </div>
 </div>
@@ -7816,7 +7816,11 @@ a.anchor-link {
 <h2 id="Abstract">Abstract<a class="anchor-link" href="#Abstract">¶</a></h2><ul>
 <li>The scaled dot-product attention mechanism of the Transformer architecture [<a href="#ref-1">1</a>] is mathematically equivalent to an ordinary MLP with a $\text{softmax}$ activation that is evaluated on the products of input matrices.</li>
 <li>The ReLUFormer architecture [<a href="#ref-5">5</a>] replaces $\text{softmax}$ with $\text{ReLU}$ and achieves similar or even better performance than the vanilla Transformer.</li>
-<li>Preliminary experiments: WIP</li>
+<li>Preliminary experiments show that in some cases:<ul>
+<li>computationally cheaper, $\text{ReLU}$-based alternative attention variants can match or even outperform the traditional $\text{softmax}$-based models,</li>
+<li>and it can be beneficial to start training models with most of the hidden dimensions and activations zeroed and gradually turning them back on over the course of the training.</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -7868,7 +7872,7 @@ a.anchor-link {
 <li><a href="#4.3-Classification-tasks">4.3 Classification tasks</a><ul>
 <li><a href="#4.3.1-AG%27s-News">4.3.1 AG's News</a></li>
 <li><a href="#4.3.2-CIFAR-10">4.3.2 CIFAR-10</a></li>
-<li><a href="#4.3.3-CIFAR-100">4.3.3 CIFAR-100</a></li>
+<li><a href="#4.3.3-CIFAR-100-(coarse)">4.3.3 CIFAR-100 (coarse)</a></li>
 <li><a href="#4.3.4-IMDb">4.3.4 IMDb</a></li>
 <li><a href="#4.3.5-ListOps">4.3.5 ListOps</a></li>
 </ul>
@@ -8266,7 +8270,9 @@ $$</p>
 </li>
 <li><p>The self-attention formula contains a quadratic form, analogous to evaluating the first layer for a second degree polynomial instead of the raw input features. Then the resulting activations are multiplied again by $X$ in the second layer, as if introducing a third degree (aside from the non-linearity). (Cf. kernel trick, polynomial regression, etc.).</p>
 </li>
-<li><p>Similarly, cross-attention can be thought of as a feed-forward network which operates on the product of two inputs.</p>
+<li><p>Similarly, cross-attention can be thought of as a feed-forward network which operates on the product of its inputs.</p>
+</li>
+<li><p>As shown by equation <a href="#eq-5">5</a>, the multi-head attention computes the sum of the individual attention heads.</p>
 </li>
 </ul>
 </div>
@@ -8549,7 +8555,7 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="4.3.3-CIFAR-100">4.3.3 CIFAR-100<a class="anchor-link" href="#4.3.3-CIFAR-100">¶</a></h4><ul>
+<h4 id="4.3.3-CIFAR-100-(coarse)">4.3.3 CIFAR-100 (coarse)<a class="anchor-link" href="#4.3.3-CIFAR-100-(coarse)">¶</a></h4><ul>
 <li><strong>Task</strong>: classification of 32x32 pixel RGB images into 20 coarse classes, with 50 000 training samples (5% held out for validation) and 10 000 test samples, both sets balanced [<a href="#ref-14">14</a>].</li>
 <li><strong>Model</strong>: Vision Transformer [<a href="#ref-2">2</a>].<ul>
 <li>Patch size: 4x4.</li>
@@ -8707,8 +8713,233 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5-Results">5 Results<a class="anchor-link" href="#5-Results">¶</a></h2><p>The following table shows the experiment results in <code>mean ± SD (model size)</code> format on the test set. (The model size does not include text embedding and text output token decoding layers.) The best result of each experiment is highlighted with bold, the second best one is underlined.</p>
-<p>TBD</p>
+<h2 id="5-Results">5 Results<a class="anchor-link" href="#5-Results">¶</a></h2><p>The following table shows the experiment results in <code>mean ± SD (model size)</code> format on the test sets. (The model size does not include text embedding and text output token decoding layers.) The best result in each experiment is highlighted with bold, the second best one is underlined.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Model</th>
+<th style="text-align:center">AG's News</th>
+<th style="text-align:center">IMDb</th>
+<th style="text-align:center">ListOps</th>
+<th style="text-align:center">CIFAR-10</th>
+<th style="text-align:center">CIFAR-100 (coarse)</th>
+<th style="text-align:center">IMDb-gen</th>
+<th style="text-align:center">WikiText2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Softmax</td>
+<td style="text-align:center">0.917 <small>± 0.001</small> (0.4M)</td>
+<td style="text-align:center">0.857 <small>± 0.006</small> (2.3M)</td>
+<td style="text-align:center">0.389 <small>± 0.005</small> (3.0M)</td>
+<td style="text-align:center"><u>0.628 <small>± 0.016</small> (0.8M)</u></td>
+<td style="text-align:center"><u>0.432 <small>± 0.001</small> (2.4M)</u></td>
+<td style="text-align:center"><strong>97.474 <small>± 3.010</small> (9.5M)</strong></td>
+<td style="text-align:center"><u>125.813 <small>± 1.477</small> (5.3M)</u></td>
+</tr>
+<tr>
+<td style="text-align:left">ReLU</td>
+<td style="text-align:center">0.918 <small>± 0.001</small> (0.4M)</td>
+<td style="text-align:center">0.876 <small>± 0.002</small> (2.3M)</td>
+<td style="text-align:center"><strong>0.424 <small>± 0.007</small> (3.0M)</strong></td>
+<td style="text-align:center">0.567 <small>± 0.007</small> (0.8M)</td>
+<td style="text-align:center">0.377 <small>± 0.014</small> (2.4M)</td>
+<td style="text-align:center">204.624 <small>± 7.025</small> (9.5M)</td>
+<td style="text-align:center">191.915 <small>± 6.820</small> (5.3M)</td>
+</tr>
+<tr>
+<td style="text-align:left">ReLU/seql</td>
+<td style="text-align:center"><strong>0.919 <small>± 0.003</small> (0.4M)</strong></td>
+<td style="text-align:center"><u>0.883 <small>± 0.001</small> (2.3M)</u></td>
+<td style="text-align:center">0.417 <small>± 0.010</small> (3.0M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">208.442 <small>± 5.297</small> (9.5M)</td>
+<td style="text-align:center">209.349 <small>± 10.973</small> (5.3M)</td>
+</tr>
+<tr>
+<td style="text-align:left">SReLU</td>
+<td style="text-align:center"><u>0.919 <small>± 0.002</small> (0.3M)</u></td>
+<td style="text-align:center">0.883 <small>± 0.003</small> (1.9M)</td>
+<td style="text-align:center">0.385 <small>± 0.013</small> (2.5M)</td>
+<td style="text-align:center">0.622 <small>± 0.010</small> (0.6M)</td>
+<td style="text-align:center">0.370 <small>± 0.040</small> (2.0M)</td>
+<td style="text-align:center">220.606 <small>± 5.272</small> (7.9M)</td>
+<td style="text-align:center">212.552 <small>± 5.345</small> (4.4M)</td>
+</tr>
+<tr>
+<td style="text-align:left">SReLU/noscl</td>
+<td style="text-align:center">0.917 <small>± 0.001</small> (0.3M)</td>
+<td style="text-align:center"><strong>0.884 <small>± 0.002</small> (1.9M)</strong></td>
+<td style="text-align:center">0.409 <small>± 0.006</small> (2.5M)</td>
+<td style="text-align:center">0.541 <small>± 0.027</small> (0.6M)</td>
+<td style="text-align:center">0.297 <small>± 0.027</small> (2.0M)</td>
+<td style="text-align:center">250.863 <small>± 4.942</small> (7.9M)</td>
+<td style="text-align:center">246.959 <small>± 9.105</small> (4.4M)</td>
+</tr>
+<tr>
+<td style="text-align:left">SReLU/seql</td>
+<td style="text-align:center">0.918 <small>± 0.002</small> (0.3M)</td>
+<td style="text-align:center">0.881 <small>± 0.004</small> (1.9M)</td>
+<td style="text-align:center">0.406 <small>± 0.021</small> (2.5M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">245.177 <small>± 12.297</small> (7.9M)</td>
+<td style="text-align:center">227.851 <small>± 8.213</small> (4.4M)</td>
+</tr>
+<tr>
+<td style="text-align:left">UbPerc</td>
+<td style="text-align:center">0.907 <small>± 0.002</small> (0.3M)</td>
+<td style="text-align:center">0.633 <small>± 0.086</small> (1.7M)</td>
+<td style="text-align:center">0.323 <small>± 0.020</small> (2.3M)</td>
+<td style="text-align:center">0.388 <small>± 0.015</small> (0.6M)</td>
+<td style="text-align:center">0.220 <small>± 0.008</small> (1.8M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left">UbPerc/seql</td>
+<td style="text-align:center">0.905 <small>± 0.001</small> (0.3M)</td>
+<td style="text-align:center">0.610 <small>± 0.017</small> (1.7M)</td>
+<td style="text-align:center">0.305 <small>± 0.044</small> (2.3M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left">Perc</td>
+<td style="text-align:center">0.911 <small>± 0.001</small> (0.3M)</td>
+<td style="text-align:center">0.592 <small>± 0.024</small> (1.9M)</td>
+<td style="text-align:center">0.336 <small>± 0.012</small> (2.5M)</td>
+<td style="text-align:center">0.402 <small>± 0.009</small> (0.6M)</td>
+<td style="text-align:center">0.216 <small>± 0.023</small> (2.0M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left">Perc/seql</td>
+<td style="text-align:center">0.904 <small>± 0.006</small> (0.3M)</td>
+<td style="text-align:center">0.579 <small>± 0.014</small> (1.9M)</td>
+<td style="text-align:center">0.286 <small>± 0.015</small> (2.5M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left">Softmax+DI</td>
+<td style="text-align:center">0.913 <small>± 0.002</small> (0.4M)</td>
+<td style="text-align:center">0.858 <small>± 0.010</small> (2.3M)</td>
+<td style="text-align:center">0.413 <small>± 0.003</small> (3.0M)</td>
+<td style="text-align:center"><strong>0.644 <small>± 0.017</small> (0.8M)</strong></td>
+<td style="text-align:center"><strong>0.436 <small>± 0.011</small> (2.4M)</strong></td>
+<td style="text-align:center"><u>102.485 <small>± 0.251</small> (9.5M)</u></td>
+<td style="text-align:center"><strong>124.082 <small>± 1.099</small> (5.3M)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">ReLU+DI</td>
+<td style="text-align:center">0.914 <small>± 0.003</small> (0.4M)</td>
+<td style="text-align:center">0.883 <small>± 0.001</small> (2.3M)</td>
+<td style="text-align:center">0.398 <small>± 0.017</small> (3.0M)</td>
+<td style="text-align:center">0.559 <small>± 0.006</small> (0.8M)</td>
+<td style="text-align:center">0.379 <small>± 0.001</small> (2.4M)</td>
+<td style="text-align:center">165.939 <small>± 1.956</small> (9.5M)</td>
+<td style="text-align:center">168.893 <small>± 1.055</small> (5.3M)</td>
+</tr>
+<tr>
+<td style="text-align:left">ReLU/seql+DI</td>
+<td style="text-align:center">0.912 <small>± 0.002</small> (0.4M)</td>
+<td style="text-align:center">0.883 <small>± 0.001</small> (2.3M)</td>
+<td style="text-align:center"><u>0.418 <small>± 0.006</small> (3.0M)</u></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">161.841 <small>± 5.266</small> (9.5M)</td>
+<td style="text-align:center">175.098 <small>± 14.203</small> (5.3M)</td>
+</tr>
+<tr>
+<td style="text-align:left">SReLU+DI</td>
+<td style="text-align:center">0.912 <small>± 0.002</small> (0.3M)</td>
+<td style="text-align:center">0.877 <small>± 0.002</small> (1.9M)</td>
+<td style="text-align:center">0.390 <small>± 0.016</small> (2.5M)</td>
+<td style="text-align:center">0.583 <small>± 0.017</small> (0.6M)</td>
+<td style="text-align:center">0.390 <small>± 0.047</small> (2.0M)</td>
+<td style="text-align:center">182.960 <small>± 5.987</small> (7.9M)</td>
+<td style="text-align:center">187.466 <small>± 3.798</small> (4.4M)</td>
+</tr>
+<tr>
+<td style="text-align:left">SReLU/noscl+DI</td>
+<td style="text-align:center">0.911 <small>± 0.001</small> (0.3M)</td>
+<td style="text-align:center">0.882 <small>± 0.001</small> (1.9M)</td>
+<td style="text-align:center">0.397 <small>± 0.015</small> (2.5M)</td>
+<td style="text-align:center">0.588 <small>± 0.033</small> (0.6M)</td>
+<td style="text-align:center">0.315 <small>± 0.021</small> (2.0M)</td>
+<td style="text-align:center">213.172 <small>± 7.038</small> (7.9M)</td>
+<td style="text-align:center">218.925 <small>± 3.590</small> (4.4M)</td>
+</tr>
+<tr>
+<td style="text-align:left">SReLU/seql+DI</td>
+<td style="text-align:center">0.912 <small>± 0.002</small> (0.3M)</td>
+<td style="text-align:center">0.880 <small>± 0.000</small> (1.9M)</td>
+<td style="text-align:center">0.399 <small>± 0.020</small> (2.5M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">200.345 <small>± 7.854</small> (7.9M)</td>
+<td style="text-align:center">202.654 <small>± 2.290</small> (4.4M)</td>
+</tr>
+<tr>
+<td style="text-align:left">UbPerc+DI</td>
+<td style="text-align:center">0.903 <small>± 0.000</small> (0.3M)</td>
+<td style="text-align:center">0.655 <small>± 0.030</small> (1.7M)</td>
+<td style="text-align:center">0.340 <small>± 0.007</small> (2.3M)</td>
+<td style="text-align:center">0.431 <small>± 0.008</small> (0.6M)</td>
+<td style="text-align:center">0.272 <small>± 0.007</small> (1.8M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left">UbPerc/seql+DI</td>
+<td style="text-align:center">0.903 <small>± 0.002</small> (0.3M)</td>
+<td style="text-align:center">0.667 <small>± 0.073</small> (1.7M)</td>
+<td style="text-align:center">0.347 <small>± 0.012</small> (2.3M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left">Perc+DI</td>
+<td style="text-align:center">0.900 <small>± 0.002</small> (0.3M)</td>
+<td style="text-align:center">0.686 <small>± 0.116</small> (1.9M)</td>
+<td style="text-align:center">0.333 <small>± 0.011</small> (2.5M)</td>
+<td style="text-align:center">0.428 <small>± 0.008</small> (0.6M)</td>
+<td style="text-align:center">0.268 <small>± 0.025</small> (2.0M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left">Perc/seql+DI</td>
+<td style="text-align:center">0.904 <small>± 0.001</small> (0.3M)</td>
+<td style="text-align:center">0.845 <small>± 0.013</small> (1.9M)</td>
+<td style="text-align:center">0.349 <small>± 0.001</small> (2.5M)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Layers×Dims/Heads, SeqLen</em></td>
+<td style="text-align:center"><em>6×72/3, 47.9 <small>± 16.2</small></em></td>
+<td style="text-align:center"><em>9×144/6, 272.5 <small>± 178.3</small></em></td>
+<td style="text-align:center"><em>12×144/6, 82.9 <small>± 93.8</small></em></td>
+<td style="text-align:center"><em>12×72/3, 65.0 <small>± 0.0</small></em></td>
+<td style="text-align:center"><em>12×128/4, 65.0 <small>± 0.0</small></em></td>
+<td style="text-align:center"><em>12×256/8, 256.0 <small>± 0.0</small></em></td>
+<td style="text-align:center"><em>12×192/6, 256.0 <small>± 0.0</small></em></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -8719,7 +8950,11 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="5.1-Discussion">5.1 Discussion<a class="anchor-link" href="#5.1-Discussion">¶</a></h3><p>TBD</p>
+<h3 id="5.1-Discussion">5.1 Discussion<a class="anchor-link" href="#5.1-Discussion">¶</a></h3><ul>
+<li>The ReLU-based and simplified $\text{ReLU}$-based models matched and even outperformed the traditional $\text{softmax}$-based models in the text classification experiments. The simplified $\text{ReLU}$ models achieved these results with significantly fewer parameters in their attention layers. However, in the vision and text-generation experiments, the traditional $\text{softmax}$-based models performed better.</li>
+<li>Drop-in yielded mixed results in the text classification experiments, but it improved the performance of most model variants in the vision and text-generation experiments.</li>
+<li>The computationally cheaper perceptron models, while often providing comparable results, fell behind the others in all experiments, suggesting that the token-by-token comparison is indeed crucial to a good result.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -9189,7 +9424,7 @@ $$</p>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">if</span> <span class="n">d_m</span> <span class="o">!=</span> <span class="n">d_n</span><span class="p">:</span>
                     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-                        <span class="sa">f</span><span class="s2">"The query and key-value dimensions must be equal for </span><span class="si">{</span><span class="n">attention_type</span><span class="si">=!r}</span><span class="s2">, got </span><span class="si">{</span><span class="n">dm_</span><span class="si">=}</span><span class="s2">, </span><span class="si">{</span><span class="n">d_n</span><span class="si">=}</span><span class="s2">"</span>
+                        <span class="sa">f</span><span class="s2">"The query and key-value dimensions must be equal for </span><span class="si">{</span><span class="n">attention_type</span><span class="si">=!r}</span><span class="s2">, got </span><span class="si">{</span><span class="n">d_m</span><span class="si">=}</span><span class="s2">, </span><span class="si">{</span><span class="n">d_n</span><span class="si">=}</span><span class="s2">"</span>
                     <span class="p">)</span>
     
                 <span class="k">if</span> <span class="n">attention_type</span> <span class="o">==</span> <span class="n">AttentionType</span><span class="o">.</span><span class="n">UNBIASED_PERCEPTRON</span><span class="p">:</span>
@@ -11908,7 +12143,7 @@ $$</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">download_dataset</span><span class="p">(</span>
         <span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-        <span class="n">files</span><span class="p">:</span> <span class="n">collections</span><span class="o">.</span><span class="n">abc</span><span class="o">.</span><span class="n">Iterable</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+        <span class="n">files</span><span class="p">:</span> <span class="n">collections</span><span class="o">.</span><span class="n">abc</span><span class="o">.</span><span class="n">Iterable</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]],</span>
         <span class="n">target_path</span><span class="p">:</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">,</span>
 <span class="p">):</span>
     <span class="k">for</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">sha256</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
@@ -13714,7 +13949,7 @@ $$</p>
             <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">23000</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">),</span>
             <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30000</span><span class="p">,</span> <span class="mf">0.60</span><span class="p">),</span>
             <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">37000</span><span class="p">,</span> <span class="mf">0.70</span><span class="p">),</span>
-            <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">5000</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">5000</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">),</span>
             <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12000</span><span class="p">,</span> <span class="mf">0.90</span><span class="p">),</span>
             <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">19000</span><span class="p">,</span> <span class="mf">1.00</span><span class="p">),</span>
         <span class="p">),</span>
@@ -13990,12 +14225,12 @@ $$</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">run_and_print_experiment_results</span><span class="p">():</span>
@@ -14023,7 +14258,7 @@ $$</p>
     <span class="n">experiments</span><span class="p">[</span><span class="s2">"CIFAR-10"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">run_or_replay</span><span class="p">(</span><span class="s2">"cifar10"</span><span class="p">,</span> <span class="n">run_cifar10</span><span class="p">),</span> <span class="s2">"f1"</span><span class="p">,</span> <span class="n">is_f1_better</span><span class="p">,</span>
     <span class="p">)</span>
-    <span class="n">experiments</span><span class="p">[</span><span class="s2">"CIFAR-100"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">experiments</span><span class="p">[</span><span class="s2">"CIFAR-100 (coarse)"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">run_or_replay</span><span class="p">(</span><span class="s2">"cifar100"</span><span class="p">,</span> <span class="n">run_cifar100</span><span class="p">),</span> <span class="s2">"f1"</span><span class="p">,</span> <span class="n">is_f1_better</span><span class="p">,</span>
     <span class="p">)</span>
     <span class="n">experiments</span><span class="p">[</span><span class="s2">"IMDb-gen"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
@@ -14102,6 +14337,41 @@ $$</p>
 
 <span class="n">run_and_print_experiment_results</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>| Model | AG's News | IMDb | ListOps | CIFAR-10 | CIFAR-100 (coarse) | IMDb-gen | WikiText2 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Softmax | 0.917&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(0.4M) | 0.857&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.006&lt;/small&gt;&amp;nbsp;(2.3M) | 0.389&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.005&lt;/small&gt;&amp;nbsp;(3.0M) | &lt;u&gt;0.628&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.016&lt;/small&gt;&amp;nbsp;(0.8M)&lt;/u&gt; | &lt;u&gt;0.432&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(2.4M)&lt;/u&gt; | **97.474&amp;nbsp;&lt;small&gt;±&amp;nbsp;3.010&lt;/small&gt;&amp;nbsp;(9.5M)** | &lt;u&gt;125.813&amp;nbsp;&lt;small&gt;±&amp;nbsp;1.477&lt;/small&gt;&amp;nbsp;(5.3M)&lt;/u&gt; |
+| ReLU | 0.918&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(0.4M) | 0.876&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(2.3M) | **0.424&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.007&lt;/small&gt;&amp;nbsp;(3.0M)** | 0.567&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.007&lt;/small&gt;&amp;nbsp;(0.8M) | 0.377&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.014&lt;/small&gt;&amp;nbsp;(2.4M) | 204.624&amp;nbsp;&lt;small&gt;±&amp;nbsp;7.025&lt;/small&gt;&amp;nbsp;(9.5M) | 191.915&amp;nbsp;&lt;small&gt;±&amp;nbsp;6.820&lt;/small&gt;&amp;nbsp;(5.3M) |
+| ReLU/seql | **0.919&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.003&lt;/small&gt;&amp;nbsp;(0.4M)** | &lt;u&gt;0.883&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(2.3M)&lt;/u&gt; | 0.417&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.010&lt;/small&gt;&amp;nbsp;(3.0M) | - | - | 208.442&amp;nbsp;&lt;small&gt;±&amp;nbsp;5.297&lt;/small&gt;&amp;nbsp;(9.5M) | 209.349&amp;nbsp;&lt;small&gt;±&amp;nbsp;10.973&lt;/small&gt;&amp;nbsp;(5.3M) |
+| SReLU | &lt;u&gt;0.919&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.3M)&lt;/u&gt; | 0.883&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.003&lt;/small&gt;&amp;nbsp;(1.9M) | 0.385&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.013&lt;/small&gt;&amp;nbsp;(2.5M) | 0.622&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.010&lt;/small&gt;&amp;nbsp;(0.6M) | 0.370&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.040&lt;/small&gt;&amp;nbsp;(2.0M) | 220.606&amp;nbsp;&lt;small&gt;±&amp;nbsp;5.272&lt;/small&gt;&amp;nbsp;(7.9M) | 212.552&amp;nbsp;&lt;small&gt;±&amp;nbsp;5.345&lt;/small&gt;&amp;nbsp;(4.4M) |
+| SReLU/noscl | 0.917&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(0.3M) | **0.884&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(1.9M)** | 0.409&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.006&lt;/small&gt;&amp;nbsp;(2.5M) | 0.541&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.027&lt;/small&gt;&amp;nbsp;(0.6M) | 0.297&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.027&lt;/small&gt;&amp;nbsp;(2.0M) | 250.863&amp;nbsp;&lt;small&gt;±&amp;nbsp;4.942&lt;/small&gt;&amp;nbsp;(7.9M) | 246.959&amp;nbsp;&lt;small&gt;±&amp;nbsp;9.105&lt;/small&gt;&amp;nbsp;(4.4M) |
+| SReLU/seql | 0.918&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.3M) | 0.881&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.004&lt;/small&gt;&amp;nbsp;(1.9M) | 0.406&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.021&lt;/small&gt;&amp;nbsp;(2.5M) | - | - | 245.177&amp;nbsp;&lt;small&gt;±&amp;nbsp;12.297&lt;/small&gt;&amp;nbsp;(7.9M) | 227.851&amp;nbsp;&lt;small&gt;±&amp;nbsp;8.213&lt;/small&gt;&amp;nbsp;(4.4M) |
+| UbPerc | 0.907&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.3M) | 0.633&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.086&lt;/small&gt;&amp;nbsp;(1.7M) | 0.323&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.020&lt;/small&gt;&amp;nbsp;(2.3M) | 0.388&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.015&lt;/small&gt;&amp;nbsp;(0.6M) | 0.220&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.008&lt;/small&gt;&amp;nbsp;(1.8M) | - | - |
+| UbPerc/seql | 0.905&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(0.3M) | 0.610&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.017&lt;/small&gt;&amp;nbsp;(1.7M) | 0.305&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.044&lt;/small&gt;&amp;nbsp;(2.3M) | - | - | - | - |
+| Perc | 0.911&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(0.3M) | 0.592&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.024&lt;/small&gt;&amp;nbsp;(1.9M) | 0.336&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.012&lt;/small&gt;&amp;nbsp;(2.5M) | 0.402&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.009&lt;/small&gt;&amp;nbsp;(0.6M) | 0.216&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.023&lt;/small&gt;&amp;nbsp;(2.0M) | - | - |
+| Perc/seql | 0.904&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.006&lt;/small&gt;&amp;nbsp;(0.3M) | 0.579&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.014&lt;/small&gt;&amp;nbsp;(1.9M) | 0.286&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.015&lt;/small&gt;&amp;nbsp;(2.5M) | - | - | - | - |
+| Softmax+DI | 0.913&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.4M) | 0.858&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.010&lt;/small&gt;&amp;nbsp;(2.3M) | 0.413&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.003&lt;/small&gt;&amp;nbsp;(3.0M) | **0.644&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.017&lt;/small&gt;&amp;nbsp;(0.8M)** | **0.436&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.011&lt;/small&gt;&amp;nbsp;(2.4M)** | &lt;u&gt;102.485&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.251&lt;/small&gt;&amp;nbsp;(9.5M)&lt;/u&gt; | **124.082&amp;nbsp;&lt;small&gt;±&amp;nbsp;1.099&lt;/small&gt;&amp;nbsp;(5.3M)** |
+| ReLU+DI | 0.914&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.003&lt;/small&gt;&amp;nbsp;(0.4M) | 0.883&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(2.3M) | 0.398&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.017&lt;/small&gt;&amp;nbsp;(3.0M) | 0.559&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.006&lt;/small&gt;&amp;nbsp;(0.8M) | 0.379&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(2.4M) | 165.939&amp;nbsp;&lt;small&gt;±&amp;nbsp;1.956&lt;/small&gt;&amp;nbsp;(9.5M) | 168.893&amp;nbsp;&lt;small&gt;±&amp;nbsp;1.055&lt;/small&gt;&amp;nbsp;(5.3M) |
+| ReLU/seql+DI | 0.912&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.4M) | 0.883&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(2.3M) | &lt;u&gt;0.418&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.006&lt;/small&gt;&amp;nbsp;(3.0M)&lt;/u&gt; | - | - | 161.841&amp;nbsp;&lt;small&gt;±&amp;nbsp;5.266&lt;/small&gt;&amp;nbsp;(9.5M) | 175.098&amp;nbsp;&lt;small&gt;±&amp;nbsp;14.203&lt;/small&gt;&amp;nbsp;(5.3M) |
+| SReLU+DI | 0.912&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.3M) | 0.877&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(1.9M) | 0.390&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.016&lt;/small&gt;&amp;nbsp;(2.5M) | 0.583&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.017&lt;/small&gt;&amp;nbsp;(0.6M) | 0.390&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.047&lt;/small&gt;&amp;nbsp;(2.0M) | 182.960&amp;nbsp;&lt;small&gt;±&amp;nbsp;5.987&lt;/small&gt;&amp;nbsp;(7.9M) | 187.466&amp;nbsp;&lt;small&gt;±&amp;nbsp;3.798&lt;/small&gt;&amp;nbsp;(4.4M) |
+| SReLU/noscl+DI | 0.911&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(0.3M) | 0.882&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(1.9M) | 0.397&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.015&lt;/small&gt;&amp;nbsp;(2.5M) | 0.588&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.033&lt;/small&gt;&amp;nbsp;(0.6M) | 0.315&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.021&lt;/small&gt;&amp;nbsp;(2.0M) | 213.172&amp;nbsp;&lt;small&gt;±&amp;nbsp;7.038&lt;/small&gt;&amp;nbsp;(7.9M) | 218.925&amp;nbsp;&lt;small&gt;±&amp;nbsp;3.590&lt;/small&gt;&amp;nbsp;(4.4M) |
+| SReLU/seql+DI | 0.912&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.3M) | 0.880&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.000&lt;/small&gt;&amp;nbsp;(1.9M) | 0.399&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.020&lt;/small&gt;&amp;nbsp;(2.5M) | - | - | 200.345&amp;nbsp;&lt;small&gt;±&amp;nbsp;7.854&lt;/small&gt;&amp;nbsp;(7.9M) | 202.654&amp;nbsp;&lt;small&gt;±&amp;nbsp;2.290&lt;/small&gt;&amp;nbsp;(4.4M) |
+| UbPerc+DI | 0.903&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.000&lt;/small&gt;&amp;nbsp;(0.3M) | 0.655&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.030&lt;/small&gt;&amp;nbsp;(1.7M) | 0.340&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.007&lt;/small&gt;&amp;nbsp;(2.3M) | 0.431&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.008&lt;/small&gt;&amp;nbsp;(0.6M) | 0.272&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.007&lt;/small&gt;&amp;nbsp;(1.8M) | - | - |
+| UbPerc/seql+DI | 0.903&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.3M) | 0.667&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.073&lt;/small&gt;&amp;nbsp;(1.7M) | 0.347&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.012&lt;/small&gt;&amp;nbsp;(2.3M) | - | - | - | - |
+| Perc+DI | 0.900&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.002&lt;/small&gt;&amp;nbsp;(0.3M) | 0.686&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.116&lt;/small&gt;&amp;nbsp;(1.9M) | 0.333&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.011&lt;/small&gt;&amp;nbsp;(2.5M) | 0.428&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.008&lt;/small&gt;&amp;nbsp;(0.6M) | 0.268&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.025&lt;/small&gt;&amp;nbsp;(2.0M) | - | - |
+| Perc/seql+DI | 0.904&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(0.3M) | 0.845&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.013&lt;/small&gt;&amp;nbsp;(1.9M) | 0.349&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.001&lt;/small&gt;&amp;nbsp;(2.5M) | - | - | - | - |
+| *Layers×Dims/Heads, SeqLen* | *6×72/3, 47.9&amp;nbsp;&lt;small&gt;±&amp;nbsp;16.2&lt;/small&gt;* | *9×144/6, 272.5&amp;nbsp;&lt;small&gt;±&amp;nbsp;178.3&lt;/small&gt;* | *12×144/6, 82.9&amp;nbsp;&lt;small&gt;±&amp;nbsp;93.8&lt;/small&gt;* | *12×72/3, 65.0&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.0&lt;/small&gt;* | *12×128/4, 65.0&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.0&lt;/small&gt;* | *12×256/8, 256.0&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.0&lt;/small&gt;* | *12×192/6, 256.0&amp;nbsp;&lt;small&gt;±&amp;nbsp;0.0&lt;/small&gt;* |
+</pre>
 </div>
 </div>
 </div>

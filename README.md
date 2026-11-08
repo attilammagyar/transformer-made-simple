@@ -1,5 +1,5 @@
-Transformer Made Simple (draft)
-===============================
+Transformer Made Simple
+=======================
 
  * The scaled dot-product attention mechanism of the
    [Transformer architecture](https://doi.org/10.48550/arXiv.1706.03762)
@@ -12,6 +12,13 @@ Transformer Made Simple (draft)
    replaces softmax with ReLU and achieves similar or even better performance
    than the vanilla Transformer.
 
- * Preliminary experiments: WIP
+ * Preliminary experiments show that in some cases:
+
+    * computationally cheaper, ReLU-based alternative attention variants can
+      match or even outperform the traditional softmax-based models,
+
+    * and it can be beneficial to start training models with most of the hidden
+      dimensions and activations zeroed and gradually turning them back on
+      over the course of the training.
 
 [See the full write-up and the notebook with the code here](https://attilammagyar.github.io/transformer-made-simple/).
